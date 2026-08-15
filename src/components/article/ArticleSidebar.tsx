@@ -18,7 +18,7 @@ export function ArticleSidebar({ related, news }: ArticleSidebarProps) {
 
   return (
     <aside className='space-y-8'>
-      {/* Related Articles */}
+      {/* Contextual Recommendations — directly connected to current article */}
       <div>
         <h3 className='text-sm font-bold text-[#0f2557] mb-3 pb-2 border-b-2 border-[#d32f2f]/30'>
           এই খবরের সঙ্গে আরও পড়ুন
@@ -30,7 +30,7 @@ export function ArticleSidebar({ related, news }: ArticleSidebarProps) {
         </div>
       </div>
 
-      {/* Today's Important News */}
+      {/* Today's Important News — broader platform-wide stories */}
       <div>
         <h3 className='text-sm font-bold text-[#0f2557] mb-3 pb-2 border-b-2 border-[#d32f2f]/30'>
           আজকের গুরুত্বপূর্ণ খবর
@@ -43,15 +43,20 @@ export function ArticleSidebar({ related, news }: ArticleSidebarProps) {
               className='flex items-start gap-2.5 py-3 first:pt-0 group'
             >
               <span className='w-1.5 h-1.5 rounded-full bg-[#d32f2f] flex-shrink-0 mt-2' />
-              <span className='text-sm text-[#333] leading-snug group-hover:text-[#0f2557] transition-colors'>
-                {getLocalizedText(item.title, language)}
-              </span>
+              <div className='flex-1 min-w-0'>
+                <span className='text-[10px] font-semibold text-[#757575] uppercase tracking-wide'>
+                  {getLocalizedText(item.categoryLabel, language)}
+                </span>
+                <p className='text-sm text-[#212121] leading-snug mt-0.5 group-hover:text-[#0f2557] transition-colors'>
+                  {getLocalizedText(item.title, language)}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
       </div>
 
-      {/* My US BARTA */}
+      {/* My US BARTA — personalized updates */}
       <MyUSBartaWidget />
     </aside>
   );
@@ -59,7 +64,7 @@ export function ArticleSidebar({ related, news }: ArticleSidebarProps) {
 
 function SidebarCard({ item, language }: { item: ArticleRelatedItem; language: 'bn' | 'en' }) {
   return (
-  <Link href='#' className='flex gap-3 group'>
+    <Link href='#' className='flex gap-3 group'>
       {item.image && (
         <div className='w-20 h-16 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0'>
           <Image
@@ -72,10 +77,7 @@ function SidebarCard({ item, language }: { item: ArticleRelatedItem; language: '
         </div>
       )}
       <div className='flex-1 min-w-0'>
-        <span className='text-[10px] font-semibold text-[#d32f2f] uppercase tracking-wide'>
-          {getLocalizedText(item.categoryLabel, language)}
-        </span>
-        <p className='text-sm font-medium text-[#212121] leading-snug mt-0.5 line-clamp-2 group-hover:text-[#0f2557] transition-colors'>
+        <p className='text-sm font-medium text-[#212121] leading-snug line-clamp-2 group-hover:text-[#0f2557] transition-colors'>
           {getLocalizedText(item.title, language)}
         </p>
         <div className='flex items-center gap-2 mt-1.5 text-[11px] text-[#9e9e9e]'>

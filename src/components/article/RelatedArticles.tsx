@@ -16,7 +16,7 @@ export function RelatedArticles({ title, items }: RelatedArticlesProps) {
   const language = useLanguage();
 
   return (
-    <section className='mt-12 pt-8 border-t border-gray-200'>
+    <section className='pt-8 border-t border-gray-200'>
       <h2 className='text-xl font-bold text-[#0f2557] mb-6'>{title}</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
         {items.map((item) => (

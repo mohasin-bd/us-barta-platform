@@ -1,4 +1,4 @@
-import type { Article, ArticlePageData } from '@/types/article';
+import type { Article, ArticlePageData, ArticleRelatedItem } from '@/types/article';
 
 export const sampleArticle: Article = {
   id: 'article-immigration-policy-2026',
@@ -153,122 +153,145 @@ export const sampleArticle: Article = {
       content: 'এই প্রতিবেদনটি সাধারণ তথ্যের জন্য। এটি কোনো আইনি পরামর্শ নয়। আপনার ব্যক্তিগত পরিস্থিতির জন্য একজন যোগ্য immigration attorney বা accredited representative-এর পরামর্শ নিন।',
     },
   ],
-  relatedArticles: [
-    {
-      id: 'rel-1',
-      slug: 'uscis-fee-schedule-change-2026',
-      title: { bn: 'ইউএসসিআইএস ফি পরিবর্তন ২০২৬: কী বাড়ছে কী কমছে', en: 'USCIS Fee Changes 2026: What\'s Increasing and Decreasing' },
-      summary: { bn: '২০২৬ সালের নতুন ফি কাঠামো এবং ফি-ওয়াইভারের যোগ্যতা।', en: 'New fee structure for 2026 and fee waiver eligibility.' },
-      image: '/images/immigration-1.png',
-      category: 'immigration',
-      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-      publishedAt: '2026-08-14T08:00:00Z',
-      readTimeMinutes: 4,
-    },
-    {
-      id: 'rel-2',
-      slug: 'h1b-masters-cap-explained',
-      title: { bn: 'H-1B মাস্টার্স ক্যাপ: বাংলাদেশি স্নাতকোত্তরদের জন্য নতুন সুযোগ', en: 'H-1B Masters Cap: New Opportunity for Bangladeshi Graduates' },
-      image: '/images/immigration-2.png',
-      category: 'immigration',
-      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-      publishedAt: '2026-08-12T08:00:00Z',
-      readTimeMinutes: 6,
-    },
-    {
-      id: 'rel-3',
-      slug: 'family-visa-processing-faster',
-      title: { bn: 'পরিবারভিত্তিক ভিসা প্রক্রিয়া এখন দ্রুততর', en: 'Family-Based Visa Processing Now Faster' },
-      image: '/images/immigration-3.png',
-      category: 'immigration',
-      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-      publishedAt: '2026-08-10T08:00:00Z',
-      readTimeMinutes: 3,
-    },
-  ],
+  relatedArticles: [],
   disclaimer: {
     bn: 'এই প্রতিবেদনটি সাধারণ তথ্যের জন্য। এটি কোনো আইনি পরামর্শ নয়। আপনার ব্যক্তিগত পরিস্থিতির জন্য একজন যোগ্য immigration attorney বা accredited representative-এর পরামর্শ নিন।',
     en: 'This report is for general informational purposes only. It is not legal advice. Please consult a qualified immigration attorney or accredited representative for your personal situation.',
   },
 };
 
-// Sidebar and recommendation mock data
-export const sidebarRelated: ArticlePageData['sidebarRelated'] = [
+// ============================================================
+// SIDEBAR — Contextual Recommendations (directly connected to article)
+// These 3 stories are directly related to topics MENTIONED in the article.
+// They must NOT appear in the bottom discovery section.
+// ============================================================
+export const sidebarRelated: ArticleRelatedItem[] = [
   {
-    id: 'side-1', slug: 'green-card-interview-tips',
+    id: 'side-1', slug: 'h1b-masters-cap-explained',
+    title: { bn: 'H-1B মাস্টার্স ক্যাপ: বাংলাদেশি স্নাতকোত্তরদের জন্য নতুন সুযোগ', en: 'H-1B Masters Cap: New Opportunity for Bangladeshi Graduates' },
+    summary: { bn: 'নতুন H-1B কোটায় মাস্টার্স ডিগ্রিধারীদের জন্য আলাদা সুযোগ এবং আবেদন প্রক্রিয়া।', en: 'Separate H-1B quota for Masters holders and application process.' },
+    image: '/images/immigration-2.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-12T08:00:00Z', readTimeMinutes: 6,
+  },
+  {
+    id: 'side-2', slug: 'green-card-interview-tips',
     title: { bn: 'গ্রিন কার্ড ইন্টারভিউ: প্রস্তুতির ১০টি টিপস', en: 'Green Card Interview: 10 Preparation Tips' },
+    summary: { bn: 'গ্রিন কার্ড ইন্টারভিউতে সাফল্যের জন্য প্রয়োজনীয় প্রস্তুতি ও সাধারণ প্রশ্ন।', en: 'Essential preparation and common questions for green card interview success.' },
     image: '/images/immigration-4.png', category: 'immigration',
     categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
     publishedAt: '2026-08-13T08:00:00Z', readTimeMinutes: 5,
   },
   {
-    id: 'side-2', slug: 'daca-tps-update-bangladeshi',
-    title: { bn: 'ড্যাকা ও টিপিএস: বাংলাদেশিদের জন্য নতুন আপডেট', en: 'DACA and TPS: New Updates for Bangladeshis' },
-    image: '/images/immigration-5.png', category: 'immigration',
+    id: 'side-3', slug: 'family-visa-processing-faster',
+    title: { bn: 'পরিবারভিত্তিক ভিসা প্রক্রিয়া এখন দ্রুততর', en: 'Family-Based Visa Processing Now Faster' },
+    summary: { bn: 'নতুন নিয়মে পরিবার পুনর্মিলন ভিসার সময় ২৪ মাস থেকে ১৮ মাসে নেমে আসছে।', en: 'New rules reduce family reunification visa wait from 24 to 18 months.' },
+    image: '/images/immigration-3.png', category: 'immigration',
     categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-    publishedAt: '2026-08-11T08:00:00Z', readTimeMinutes: 4,
-  },
-  {
-    id: 'side-3', slug: 'citizenship-test-changes',
-    title: { bn: 'নাগরিকত্ব পরীক্ষার নতুন প্রশ্ন ২০২৬', en: 'New Citizenship Test Questions 2026' },
-    image: '/images/immigration-6.png', category: 'immigration',
-    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-    publishedAt: '2026-08-09T08:00:00Z', readTimeMinutes: 3,
+    publishedAt: '2026-08-10T08:00:00Z', readTimeMinutes: 3,
   },
 ];
 
-export const sidebarNews: ArticlePageData['sidebarNews'] = [
+// ============================================================
+// SIDEBAR — Today's Important News (broader platform-wide stories)
+// These are NOT immigration-specific — they show broader US BARTA content.
+// ============================================================
+export const sidebarNews: ArticleRelatedItem[] = [
   {
     id: 'sn-1', slug: 'ny-housing-cost-rise',
-    title: { bn: 'নিউইয়র্কে বাসস্থান খরচ বাড়ছে', en: 'NY Housing Costs Rising' },
-    category: 'life-in-america',
+    title: { bn: 'নিউইয়র্কে বাসভাড়া বাড়ছে', en: 'NY Rents Rising' },
+    summary: { bn: 'ব্রুকলিন ও কুইন্সে গড় ভাড়া গত বছরের তুলনায় ৮% বেড়েছে।', en: 'Average rent in Brooklyn and Queens is up 8% from last year.' },
+    image: '/images/news-housing.png', category: 'life-in-america',
     categoryLabel: { bn: 'আমেরিকার জীবন', en: 'Life in America' },
-    publishedAt: '2026-08-15T10:00:00Z',
+    publishedAt: '2026-08-15T10:00:00Z', readTimeMinutes: 3,
   },
   {
     id: 'sn-2', slug: 'scholarship-bangladeshi-students',
     title: { bn: 'বাংলাদেশি শিক্ষার্থীদের জন্য নতুন স্কলারশিপ', en: 'New Scholarships for Bangladeshi Students' },
-    category: 'education',
+    summary: { bn: 'বিভিন্ন বিশ্ববিদ্যালয়ে বাংলাদেশি শিক্ষার্থীদের জন্য আলাদা তহবিল ঘোষণা।', en: 'Several universities announce dedicated funds for Bangladeshi students.' },
+    image: '/images/news-scholarship.png', category: 'education',
     categoryLabel: { bn: 'শিক্ষা', en: 'Education' },
-    publishedAt: '2026-08-15T08:00:00Z',
+    publishedAt: '2026-08-15T08:00:00Z', readTimeMinutes: 4,
   },
   {
     id: 'sn-3', slug: 'jackson-heights-job-fair',
     title: { bn: 'জ্যাকসন হাইটসে চাকরি মেলা', en: 'Jackson Heights Job Fair' },
-    category: 'jobs-career',
+    summary: { bn: 'আগামী শনিবার জ্যাকসন হাইটসে বাংলাদেশি কমিউনিটি কেন্দ্রে বড় চাকরি মেলা।', en: 'Major job fair this Saturday at Jackson Heights Bangladeshi Community Center.' },
+    image: '/images/news-jobfair.png', category: 'jobs-career',
     categoryLabel: { bn: 'চাকরি ও ক্যারিয়ার', en: 'Jobs & Career' },
-    publishedAt: '2026-08-14T12:00:00Z',
+    publishedAt: '2026-08-14T12:00:00Z', readTimeMinutes: 2,
   },
   {
     id: 'sn-4', slug: 'community-health-camp',
     title: { bn: 'কমিউনিটি স্বাস্থ্য শিবির শুরু', en: 'Community Health Camp Begins' },
-    category: 'health',
+    summary: { bn: 'বিনামূল্যে স্বাস্থ্য পরীক্ষা, ভ্যাকসিন এবং পরামর্শ সেবা — সবার জন্য উন্মুক্ত।', en: 'Free health checkups, vaccines, and counseling — open to everyone.' },
+    image: '/images/news-health.png', category: 'health',
     categoryLabel: { bn: 'স্বাস্থ্য', en: 'Health' },
-    publishedAt: '2026-08-14T06:00:00Z',
+    publishedAt: '2026-08-14T06:00:00Z', readTimeMinutes: 2,
+  },
+  {
+    id: 'sn-5', slug: 'eid-prayer-arrangements-nyc',
+    title: { bn: 'নিউইয়র্কে ঈদের নামাজের ব্যবস্থা', en: 'Eid Prayer Arrangements in NYC' },
+    summary: { bn: 'বিভিন্ন মসজিদ ও পার্কে ঈদুল আযহার নামাজের সময়সূচি ও স্থান।', en: 'Eid al-Adha prayer schedules and locations at various mosques and parks.' },
+    image: '/images/news-eid.png', category: 'islamic-life',
+    categoryLabel: { bn: 'ইসলামী জীবন', en: 'Islamic Life' },
+    publishedAt: '2026-08-13T16:00:00Z', readTimeMinutes: 2,
   },
 ];
 
-export const recommendedForYou: ArticlePageData['recommendedForYou'] = [
+// ============================================================
+// BOTTOM DISCOVERY — Broader category exploration (6 articles)
+// These cover a WIDER range of immigration topics for discovery.
+// They must NOT duplicate any sidebar articles.
+// ============================================================
+export const categoryDiscovery: ArticleRelatedItem[] = [
   {
-    id: 'rec-1', slug: 'work-permit-options',
-    title: { bn: 'কাজের অনুমতির বিকল্প বিকল্প', en: 'Work Permit Alternatives' },
-    image: '/images/immigration-7.png', category: 'immigration',
+    id: 'disc-1', slug: 'uscis-fee-schedule-change-2026',
+    title: { bn: 'ইউএসসিআইএস ফি পরিবর্তন ২০২৬: কী বাড়ছে কী কমছে', en: 'USCIS Fee Changes 2026: What\'s Increasing and Decreasing' },
+    summary: { bn: '২০২৬ সালের নতুন ফি কাঠামো এবং ফি-ওয়াইভারের যোগ্যতা সম্পর্কে বিস্তারিত।', en: 'Details on the new 2026 fee structure and fee waiver eligibility.' },
+    image: '/images/immigration-1.png', category: 'immigration',
     categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
-    publishedAt: '2026-08-08T08:00:00Z', readTimeMinutes: 7,
+    publishedAt: '2026-08-14T08:00:00Z', readTimeMinutes: 4,
   },
   {
-    id: 'rec-2', slug: 'immigration-lawyer-guide',
+    id: 'disc-2', slug: 'opt-to-h1b-transition',
+    title: { bn: 'OPT থেকে H-1B: সম্পূর্ণ গাইড', en: 'OPT to H-1B: Complete Guide' },
+    summary: { bn: 'অধ্যয়ন শেষে কাজের অনুমতি থেকে H-1B ভিসায় স্থানান্তরের ধাপে ধাপে নির্দেশনা।', en: 'Step-by-step guide to transitioning from OPT work authorization to H-1B visa.' },
+    image: '/images/immigration-5.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-08T08:00:00Z', readTimeMinutes: 8,
+  },
+  {
+    id: 'disc-3', slug: 'citizenship-naturalization-guide',
+    title: { bn: 'নাগরিকত্ব প্রাপ্তি: সম্পূর্ণ গাইড ২০২৬', en: 'Naturalization: Complete Guide 2026' },
+    summary: { bn: 'নাগরিকত্বের জন্য আবেদনের যোগ্যতা, প্রক্রিয়া এবং প্রস্তুতির সব তথ্য।', en: 'Eligibility, process, and preparation details for citizenship application.' },
+    image: '/images/immigration-6.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-07T08:00:00Z', readTimeMinutes: 10,
+  },
+  {
+    id: 'disc-4', slug: 'daca-tps-update-bangladeshi',
+    title: { bn: 'ড্যাকা ও টিপিএস: বাংলাদেশিদের জন্য নতুন আপডেট', en: 'DACA and TPS: New Updates for Bangladeshis' },
+    summary: { bn: 'টিএমপোরারি প্রটেক্টেড স্ট্যাটাস এবং ড্যাকার নতুন সুযোগ নিয়ে আলোচনা।', en: 'Discussion on new opportunities under TPS and DACA programs.' },
+    image: '/images/immigration-7.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-11T08:00:00Z', readTimeMinutes: 4,
+  },
+  {
+    id: 'disc-5', slug: 'immigration-lawyer-guide',
     title: { bn: 'কীভাবে সঠিক ইমিগ্রেশন আইনজীবী বাছবেন', en: 'How to Choose the Right Immigration Lawyer' },
+    summary: { bn: 'যোগ্য ইমিগ্রেশন আইনজীবী খোঁজার টিপস এবং সতর্কতা।', en: 'Tips and cautions for finding a qualified immigration attorney.' },
     image: '/images/immigration-8.png', category: 'immigration',
     categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
     publishedAt: '2026-08-06T08:00:00Z', readTimeMinutes: 5,
   },
   {
-    id: 'rec-3', slug: ' OPT-to-h1b-transition',
-    title: { bn: 'OPT থেকে H-1B: সম্পূর্ণ গাইড', en: 'OPT to H-1B: Complete Guide' },
-    image: '/images/immigration-2.png', category: 'education',
-    categoryLabel: { bn: 'শিক্ষা', en: 'Education' },
-    publishedAt: '2026-08-04T08:00:00Z', readTimeMinutes: 8,
+    id: 'disc-6', slug: 'work-permit-options',
+    title: { bn: 'যুক্তরাষ্ট্রে কাজের অনুমতির সব বিকল্প', en: 'All Work Permit Options in the US' },
+    summary: { bn: 'H-1B, O-1, L-1, E-2 সহ বিভিন্ন কাজের ভিসার তুলনামূলক আলোচনা।', en: 'Comparative discussion of H-1B, O-1, L-1, E-2 and other work visa options.' },
+    image: '/images/immigration-9.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-05T08:00:00Z', readTimeMinutes: 7,
   },
 ];
 
@@ -277,6 +300,6 @@ export function getArticlePageData(): ArticlePageData {
     article: sampleArticle,
     sidebarRelated,
     sidebarNews,
-    recommendedForYou,
+    categoryDiscovery,
   };
 }

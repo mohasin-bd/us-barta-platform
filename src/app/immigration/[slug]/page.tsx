@@ -11,9 +11,9 @@ import { ArticleBody } from '@/components/article/ArticleBody';
 import { ArticleAIHelper } from '@/components/article/ArticleAIHelper';
 import { ArticleSidebar } from '@/components/article/ArticleSidebar';
 import { RelatedArticles } from '@/components/article/RelatedArticles';
-import { RecommendedForYou } from '@/components/article/RecommendedForYou';
 import { CommentSection } from '@/components/article/CommentSection';
 import { getArticlePageData } from '@/data/article-sample';
+import { getDiscoveryHeading } from '@/data/categories';
 
 const data = getArticlePageData();
 
@@ -31,12 +31,15 @@ export function generateMetadata(): Metadata {
 }
 
 export default function ArticlePage() {
-  const { article, sidebarRelated, sidebarNews, recommendedForYou } = data;
+  const { article, sidebarRelated, sidebarNews, categoryDiscovery } = data;
 
   const breadcrumbs = [
     { label: { bn: 'হোম', en: 'Home' }, href: '/' },
     { label: article.categoryLabel, href: `/category/${article.category}` },
   ];
+
+  // Dynamic discovery heading based on article's category
+  const discoveryTitle = getDiscoveryHeading(article.category);
 
   return (
     <div className='min-h-screen flex flex-col'>
@@ -55,21 +58,24 @@ export default function ArticlePage() {
               <ArticleHero article={article} />
               <ArticleBody sections={article.body} />
               <ArticleAIHelper />
-              <RelatedArticles title='আরও পড়ুন' items={article.relatedArticles} />
-              <RecommendedForYou items={recommendedForYou} />
-              <CommentSection />
             </article>
 
-            {/* ===== SIDEBAR (desktop) ===== */}
+            {/* ===== SIDEBAR (desktop only) ===== */}
             <div className='hidden lg:block w-[300px] flex-shrink-0 lg:sticky lg:top-[130px] lg:self-start'>
               <ArticleSidebar related={sidebarRelated} news={sidebarNews} />
             </div>
           </div>
 
-          {/* ===== SIDEBAR CONTENT (mobile — below article) ===== */}
+          {/* ===== SIDEBAR CONTENT (mobile/tablet — below article & AI) ===== */}
           <div className='lg:hidden mt-10 pt-8 border-t border-gray-200'>
             <ArticleSidebar related={sidebarRelated} news={sidebarNews} />
           </div>
+
+          {/* ===== BOTTOM DISCOVERY SECTION — broader category exploration ===== */}
+          <RelatedArticles title={discoveryTitle} items={categoryDiscovery} />
+
+          {/* ===== COMMENTS / ENGAGEMENT ===== */}
+          <CommentSection />
         </PageContainer>
       </main>
 

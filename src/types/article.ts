@@ -64,5 +64,5 @@ export interface ArticlePageData {
   article: Article;
   sidebarRelated: ArticleRelatedItem[];
   sidebarNews: ArticleRelatedItem[];
-  recommendedForYou: ArticleRelatedItem[];
+  categoryDiscovery: ArticleRelatedItem[];
 }
