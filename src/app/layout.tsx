@@ -1,37 +1,44 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Hind_Siliguri, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const hindSiliguri = Hind_Siliguri({
+  variable: "--font-hind-siliguri",
+  subsets: ["bengali", "latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
-  icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
-  },
+  title: "US BARTA — খবর, জীবন ও প্রয়োজন",
+  description:
+    "বাংলাদেশি-আমেরিকানদের জন্য বিশ্বস্ত বাংলা প্ল্যাটফর্ম। খবর, ইমিগ্রেশন, শিক্ষা, স্বাস্থ্য, চাকরি, ইভেন্টস ও কমিউনিটি তথ্য।",
+  keywords: [
+    "US BARTA",
+    "বাংলা খবর",
+    "Bangladeshi American",
+    "immigration",
+    "বাংলাদেশি আমেরিকান",
+    "New York Bangla",
+    "Bangla news USA",
+  ],
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "US BARTA — খবর, জীবন ও প্রয়োজন",
+    description:
+      "বাংলাদেশি-আমেরিকানদের জন্য বিশ্বস্ত বাংলা প্ল্যাটফর্ম",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    siteName: "US BARTA",
+    images: ["/hero-bg.png"],
   },
 };
 
@@ -41,9 +48,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="bn" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${hindSiliguri.variable} ${inter.variable} antialiased`}
+        style={{ fontFamily: "var(--font-hind-siliguri), var(--font-inter), sans-serif" }}
       >
         {children}
         <Toaster />

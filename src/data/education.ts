@@ -1,0 +1,88 @@
+import type { EducationItem } from '@/types/content';
+
+export const mockEducation: EducationItem[] = [
+  {
+    id: 'education-1',
+    slug: 'fafsa-deadline-2025-2026-extended',
+    title: {
+      bn: 'এফএএফএসএ ২০২৫-২৬: আবেদনের সময়সীমা বাড়ানো হয়েছে',
+      en: 'FAFSA 2025-26: Application Deadline Extended',
+    },
+    summary: {
+      bn: 'ফেডারেল শিক্ষা বিভাগ এফএএফএসএ ২০২৫-২৬ আর্থিক সহায়তার আবেদনের সময়সীমা জুন ৩০ থেকে সেপ্টেম্বর ১৫ পর্যন্ত বাড়িয়েছে। বাংলাদেশি-আমেরিকান পরিবারগুলোর জন্য এটি একটি গুরুত্বপূর্ণ সুযোগ। আবেদন করার ধাপে ধাপে নির্দেশনা এখানে দেওয়া হলো।',
+      en: 'The Department of Education has extended the FAFSA 2025-26 financial aid application deadline from June 30 to September 15. This is an important opportunity for Bangladeshi-American families. Step-by-step instructions for applying are provided here.',
+    },
+    image: undefined,
+    taxonomy: {
+      primaryCategory: 'education',
+      secondaryTopic: 'Financial Aid',
+      geography: { state: 'NY', city: 'Jackson Heights' },
+      audience: ['parent', 'student', 'family'],
+      contentType: 'guide',
+      urgency: 'high',
+      language: 'bn',
+      sourceType: 'editorial',
+      publishedAt: '2025-06-14T09:00:00Z',
+    },
+    institution: 'Federal Student Aid',
+    educationLevel: 'university',
+    isFAFSARelevant: true,
+    aiTags: ['FAFSA', 'financial aid', 'deadline', 'college', 'university'],
+  },
+  {
+    id: 'education-2',
+    slug: 'nyc-public-school-enrollment-guide-bengali-parents',
+    title: {
+      bn: 'এনওয়াইসি পাবলিক স্কুলে ভর্তি গাইড: বাংলাভাষী অভিভাবকদের জন্য',
+      en: 'NYC Public School Enrollment Guide: For Bengali-Speaking Parents',
+    },
+    summary: {
+      bn: 'নতুন এসেছেন এমন বাংলাভাষী পরিবারগুলোর জন্য নিউইয়র্ক সিটির পাবলিক স্কুলে ভর্তি প্রক্রিয়া সহজ করতে এই গাইড তৈরি করা হয়েছে। কিন্ডারগার্টেন থেকে হাই স্কুল পর্যন্ত ভর্তির সময়সূচি, প্রয়োজনীয় কাগজপত্র এবং বাংলা ভাষা সহায়তা সম্পর্কে বিস্তারিত।',
+      en: 'This guide is designed to make the NYC public school enrollment process easier for newly arrived Bengali-speaking families. Detailed information about enrollment timelines from kindergarten through high school, required documents, and Bangla language support services.',
+    },
+    image: undefined,
+    taxonomy: {
+      primaryCategory: 'education',
+      secondaryTopic: 'School Enrollment',
+      geography: { state: 'NY', city: 'Jackson Heights', county: 'Queens' },
+      audience: ['parent', 'new-immigrant', 'family'],
+      contentType: 'guide',
+      urgency: 'normal',
+      language: 'bn',
+      sourceType: 'editorial',
+      publishedAt: '2025-06-12T11:00:00Z',
+    },
+    institution: 'NYC Department of Education',
+    educationLevel: 'k12',
+    isFAFSARelevant: false,
+    aiTags: ['NYC schools', 'enrollment', 'Bengali parents', 'kindergarten', 'public school'],
+  },
+  {
+    id: 'education-3',
+    slug: 'scholarships-bangladeshi-students-us-2025',
+    title: {
+      bn: 'বাংলাদেশি শিক্ষার্থীদের জন্য মার্কিন স্কলারশিপ ২০২৫',
+      en: 'US Scholarships for Bangladeshi Students 2025',
+    },
+    summary: {
+      bn: 'মার্কিন যুক্তরাষ্ট্রে অধ্যয়নরত বাংলাদেশি শিক্ষার্থীদের জন্য ২০২৫ সালে আবেদন করা যাবে এমন কয়েকটি উল্লেখযোগ্য স্কলারশিপের তালিকা। এগুলোর মধ্যে রয়েছে অ্যাগাহ খান ফাউন্ডেশন, ফুলব্রাইট, এবং বিভিন্ন বিশ্ববিদ্যালয়ের মেধা ভিত্তিক স্কলারশিপ।',
+      en: 'A list of notable scholarships available for Bangladeshi students studying in the US in 2025. These include the Aga Khan Foundation, Fulbright, and various university merit-based scholarships.',
+    },
+    image: undefined,
+    taxonomy: {
+      primaryCategory: 'education',
+      secondaryTopic: 'Scholarships',
+      geography: { state: 'NY', city: 'Jackson Heights' },
+      audience: ['student', 'professional', 'family'],
+      contentType: 'resource',
+      urgency: 'normal',
+      language: 'bn',
+      sourceType: 'editorial',
+      publishedAt: '2025-06-10T14:00:00Z',
+    },
+    institution: 'Various',
+    educationLevel: 'university',
+    isFAFSARelevant: false,
+    aiTags: ['scholarship', 'Bangladeshi students', 'financial aid', 'university', 'Fulbright'],
+  },
+];
