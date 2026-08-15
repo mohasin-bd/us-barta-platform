@@ -83,7 +83,7 @@ export function CategoryQuickLinks() {
             return (
               <Link
                 key={cat.slug}
-                href={`/category/${cat.slug}`}`
+                href={`/category/${cat.slug}`}
                 className='flex-shrink-0 scroll-snap-start flex flex-col items-center gap-2.5 px-3 py-3 rounded-xl bg-white min-w-[76px] transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 group'
               >
                 <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center transition-transform duration-200 group-hover:scale-105`}>
