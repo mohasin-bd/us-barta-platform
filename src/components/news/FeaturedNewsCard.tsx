@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { ImageIcon, AlertTriangle } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 import { getLocalizedText } from '@/lib/i18n/bilingual';
 import { useLanguage } from '@/hooks/use-language';
 import { CategoryBadge } from '@/components/common/CategoryBadge';
 import { ArticleMeta } from '@/components/common/ArticleMeta';
+import { SafeImage } from '@/components/common/SafeImage';
 import type { NewsItem } from '@/types/content';
-import { t } from '@/lib/i18n/translations';
 
 interface FeaturedNewsCardProps {
   item: NewsItem;
@@ -21,12 +21,24 @@ export function FeaturedNewsCard({ item, featured = false }: FeaturedNewsCardPro
     return (
       <Link href={`/news/${item.slug}`} className="block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
         {item.image ? (
-          <div className="aspect-video relative">
-            <img src={item.image} alt={getLocalizedText(item.title, language)} className="w-full h-full object-cover rounded-t-lg" />
+          <div className="aspect-video overflow-hidden">
+            <SafeImage
+              src={item.image}
+              alt={getLocalizedText(item.title, language)}
+              width={400}
+              height={225}
+              className="w-full h-full object-cover"
+            />
           </div>
         ) : (
-          <div className="aspect-video bg-gray-100 flex items-center justify-center">
-            <ImageIcon className="h-8 w-8 text-gray-300" />
+          <div className="aspect-video overflow-hidden">
+            <SafeImage
+              src='/images/placeholder.png'
+              alt={getLocalizedText(item.title, language)}
+              width={400}
+              height={225}
+              className="w-full h-full object-cover"
+            />
           </div>
         )}
         <div className="p-4 space-y-2">
@@ -60,17 +72,23 @@ export function FeaturedNewsCard({ item, featured = false }: FeaturedNewsCardPro
       className="block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow"
     >
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-[60%] aspect-video md:aspect-auto md:min-h-[240px] flex-shrink-0">
+        <div className="md:w-[60%] aspect-video md:aspect-auto md:min-h-[240px] flex-shrink-0 overflow-hidden">
           {item.image ? (
-            <img
+            <SafeImage
               src={item.image}
               alt={getLocalizedText(item.title, language)}
+              width={600}
+              height={360}
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-              <ImageIcon className="h-12 w-12 text-gray-300" />
-            </div>
+            <SafeImage
+              src='/images/placeholder.png'
+              alt={getLocalizedText(item.title, language)}
+              width={600}
+              height={360}
+              className="w-full h-full object-cover"
+            />
           )}
         </div>
         <div className="md:w-[40%] p-4 md:p-5 flex flex-col justify-center space-y-2.5">

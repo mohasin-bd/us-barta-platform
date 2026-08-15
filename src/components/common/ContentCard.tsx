@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { ImageIcon } from 'lucide-react';
 import { getLocalizedText } from '@/lib/i18n/bilingual';
 import { useLanguage } from '@/hooks/use-language';
 import { CategoryBadge } from './CategoryBadge';
 import { ArticleMeta } from './ArticleMeta';
+import { SafeImage } from './SafeImage';
 import type { BilingualText, ContentCategory } from '@/types/content';
 
 interface ContentCardProps {
@@ -29,12 +29,24 @@ export function ContentCard({ title, summary, image, category, date, href, class
       className={`block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer ${className}`}
     >
       {image ? (
-        <div className="aspect-video relative">
-          <img src={image} alt={getLocalizedText(title, language)} className="w-full h-full object-cover rounded-t-lg" />
+        <div className="aspect-video overflow-hidden">
+          <SafeImage
+            src={image}
+            alt={getLocalizedText(title, language)}
+            width={400}
+            height={225}
+            className="w-full h-full object-cover"
+          />
         </div>
       ) : (
         <div className="aspect-video bg-gray-100 flex items-center justify-center">
-          <ImageIcon className="h-8 w-8 text-gray-300" />
+          <SafeImage
+            src='/images/placeholder.png'
+            alt={getLocalizedText(title, language)}
+            width={400}
+            height={225}
+            className="w-full h-full object-cover"
+          />
         </div>
       )}
       <div className="p-4 space-y-2">

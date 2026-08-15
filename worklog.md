@@ -172,3 +172,27 @@ Stage Summary:
 - Quick Access: 8 distinct category colors (red, blue, orange, green, navy, purple, teal, pink)
 - News: Single heading (duplicate removed)
 - Footer: 2016, Md. Mohasin Billah, Delaware address, professionally formatted
+---
+Task ID: 1
+Agent: Main Agent
+Task: Final UX and monetization architecture correction to US BARTA article page
+
+Work Log:
+- Removed CategoryQuickLinks from article page (kept on homepage)
+- Created SafeImage component (src/components/common/SafeImage.tsx) with branded US BARTA fallback
+- Created BusinessListing type system with category mapping, organic/featured types, and recommendation architecture
+- Created mock business data (3 organic + 1 featured immigration attorneys near Jackson Heights, NY)
+- Built BusinessListingCard component with specialties, rating, distance, call-to-action, and Featured badge
+- Completely rebuilt ArticleSidebar: contextual services → featured business → My US BARTA
+- Removed “এই খবরের সঙ্গে আরও পড়ুন” and “আজকের গুরুত্বপূর্ণ খবর” from sidebar
+- Replaced all next/image with SafeImage in ArticleHero, RelatedArticles, FeaturedNewsCard, ContentCard
+- Updated ArticlePageData type: sidebarBusinesses replaces sidebarRelated + sidebarNews
+- Kept bottom discovery section “আরও ইমিগ্রেশন পড়ুন” with 6 articles and dynamic category headings
+- Verified desktop (1440x900), mobile (375x812), and homepage — all working, no errors
+
+Stage Summary:
+- Article page now follows READ → UNDERSTAND → TAKE ACTION → DISCOVER paradigm
+- Sidebar monetization architecture ready for future business listings
+- No content duplication between sidebar (businesses) and bottom (editorial)
+- Category icon strip preserved on homepage, removed from article pages
+- All broken images now show branded US BARTA fallback instead of browser broken-image icons

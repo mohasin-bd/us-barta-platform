@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Clock } from 'lucide-react';
 import { useLanguage } from '@/hooks/use-language';
 import { getLocalizedText } from '@/lib/i18n/bilingual';
+import { SafeImage } from '@/components/common/SafeImage';
 import type { ArticleRelatedItem } from '@/types/article';
 
 interface RelatedArticlesProps {
@@ -23,9 +23,9 @@ export function RelatedArticles({ title, items }: RelatedArticlesProps) {
           <Link key={item.id} href='#' className='group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow'>
             {item.image && (
               <div className='aspect-[16/10] bg-gray-100 overflow-hidden'>
-                <Image
+                <SafeImage
                   src={item.image}
-                  alt=''
+                  alt={getLocalizedText(item.title, language)}
                   width={400}
                   height={250}
                   className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'

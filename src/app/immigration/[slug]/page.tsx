@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { PageContainer } from '@/components/layout/PageContainer';
-import { CategoryQuickLinks } from '@/components/navigation/CategoryQuickLinks';
 import { ReadingProgress } from '@/components/article/ReadingProgress';
 import { Breadcrumb } from '@/components/article/Breadcrumb';
 import { ArticleHeader } from '@/components/article/ArticleHeader';
@@ -31,21 +30,21 @@ export function generateMetadata(): Metadata {
 }
 
 export default function ArticlePage() {
-  const { article, sidebarRelated, sidebarNews, categoryDiscovery } = data;
+  const { article, sidebarBusinesses, categoryDiscovery } = data;
 
   const breadcrumbs = [
     { label: { bn: 'হোম', en: 'Home' }, href: '/' },
     { label: article.categoryLabel, href: `/category/${article.category}` },
   ];
 
-  // Dynamic discovery heading based on article's category
   const discoveryTitle = getDiscoveryHeading(article.category);
 
   return (
     <div className='min-h-screen flex flex-col'>
       <ReadingProgress />
       <Header />
-      <CategoryQuickLinks />
+
+      {/* Category icon strip is intentionally NOT shown on article pages */}
 
       <main className='flex-1'>
         <PageContainer>
@@ -60,18 +59,18 @@ export default function ArticlePage() {
               <ArticleAIHelper />
             </article>
 
-            {/* ===== SIDEBAR (desktop only) ===== */}
+            {/* ===== SIDEBAR — desktop only ===== */}
             <div className='hidden lg:block w-[300px] flex-shrink-0 lg:sticky lg:top-[130px] lg:self-start'>
-              <ArticleSidebar related={sidebarRelated} news={sidebarNews} />
+              <ArticleSidebar businesses={sidebarBusinesses} />
             </div>
           </div>
 
           {/* ===== SIDEBAR CONTENT (mobile/tablet — below article & AI) ===== */}
           <div className='lg:hidden mt-10 pt-8 border-t border-gray-200'>
-            <ArticleSidebar related={sidebarRelated} news={sidebarNews} />
+            <ArticleSidebar businesses={sidebarBusinesses} />
           </div>
 
-          {/* ===== BOTTOM DISCOVERY SECTION — broader category exploration ===== */}
+          {/* ===== BOTTOM DISCOVERY — broader category exploration ===== */}
           <RelatedArticles title={discoveryTitle} items={categoryDiscovery} />
 
           {/* ===== COMMENTS / ENGAGEMENT ===== */}

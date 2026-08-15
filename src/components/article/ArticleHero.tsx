@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { useLanguage } from '@/hooks/use-language';
 import { getLocalizedText } from '@/lib/i18n/bilingual';
+import { SafeImage } from '@/components/common/SafeImage';
 import type { Article } from '@/types/article';
 
 interface ArticleHeroProps {
@@ -15,7 +15,7 @@ export function ArticleHero({ article }: ArticleHeroProps) {
   return (
     <figure className='my-6 lg:my-8'>
       <div className='relative aspect-[16/9] rounded-xl overflow-hidden bg-gray-100'>
-        <Image
+        <SafeImage
           src={article.heroImage}
           alt={getLocalizedText(article.title, language)}
           fill
