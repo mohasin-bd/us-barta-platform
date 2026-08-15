@@ -12,7 +12,7 @@ export const mockNews: NewsItem[] = [
       bn: 'ট্রাম্প প্রশাসন এইচ-১বি ভিসা প্রক্রিয়ায় উল্লেখযোগ্য পরিবর্তনের প্রস্তাব করেছে। নতুন নিয়মে লটারি সিস্টেম সংশোধন এবং বেতন প্রয়োজনীয়তা বৃদ্ধি করা হতে পারে। বাংলাদেশি পেশাদারদের জন্য এই পরিবর্তন কীভাবে প্রভাব ফেলবে তা নিয়ে আলোচনা চলছে।',
       en: 'The Trump administration has proposed significant changes to the H-1B visa process. The new rules may revise the lottery system and increase salary requirements. The impact of these changes on Bangladeshi professionals is under discussion.',
     },
-    image: undefined,
+    image: '/images/news-featured.png',
     taxonomy: {
       primaryCategory: 'immigration',
       secondaryTopic: 'H-1B Visa',
@@ -40,7 +40,7 @@ export const mockNews: NewsItem[] = [
       bn: 'সরকার নতুন নির্বাচন কমিশন গঠনের জন্য সার্চ কমিটি গঠন করেছে। প্রবাসী বাংলাদেশিরা এই প্রক্রিয়ায় গুরুত্বপূর্ণ ভূমিকা রাখতে পারে। পরবর্তী জাতীয় নির্বাচনের তারিখ এখনও ঘোষণা করা হয়নি।',
       en: 'The government has formed a search committee for the new Election Commission. expatriate Bangladeshis can play an important role in this process. The date for the next national election has not yet been announced.',
     },
-    image: undefined,
+    image: '/images/news-2.png',
     taxonomy: {
       primaryCategory: 'news',
       secondaryTopic: 'Bangladesh Politics',
@@ -67,7 +67,7 @@ export const mockNews: NewsItem[] = [
       bn: 'জ্যাকসন হাইটসের ৭৩তম রোডে প্রবাসী বাংলাদেশিদের উদ্যোগে একটি নতুন বাংলা ভাষা বিদ্যালয় চালু হয়েছে। প্রতি শনিবার সকালে শিশুদের জন্য বাংলা পড়াশোনার ব্যবস্থা রয়েছে। প্রথম সেমিস্টারে প্রায় ৫০ জন শিক্ষার্থী ভর্তি হয়েছে।',
       en: 'A new Bangla language school has opened on 73rd Street in Jackson Heights, initiated by expatriate Bangladeshis. Bangla classes for children are held every Saturday morning. Approximately 50 students have enrolled in the first semester.',
     },
-    image: undefined,
+    image: '/images/news-3.png',
     taxonomy: {
       primaryCategory: 'community',
       secondaryTopic: 'Local Education',
@@ -94,7 +94,7 @@ export const mockNews: NewsItem[] = [
       bn: 'ফেডারেল রিজার্ভের সাম্প্রতিক তথ্য অনুযায়ী মুদ্রাস্ফীতির হার কমে ২.৮% এ নেমে এসেছে। চাকরির বাজার স্থিতিশীল থাকলেও ছোট ব্যবসাগুলো চ্যালেঞ্জের মুখোমুখি হচ্ছে। বাংলাদেশি মালিকানাধীন ব্যবসা প্রতিষ্ঠানগুলো কীভাবে এই পরিস্থিতি সামলাচ্ছে।',
       en: "According to recent Federal Reserve data, the inflation rate has dropped to 2.8%. While the job market remains stable, small businesses are facing challenges. How Bangladeshi-owned businesses are navigating this situation.",
     },
-    image: undefined,
+    image: '/images/news-4.png',
     taxonomy: {
       primaryCategory: 'news',
       secondaryTopic: 'US Economy',
@@ -121,7 +121,7 @@ export const mockNews: NewsItem[] = [
       bn: 'ডাঃ ফারহানা আক্তারকে কুইন্স বোরো প্রেসিডেন্টের পক্ষ থেকে সম্মাননা পদক দেওয়া হয়েছে। তিনি জ্যাকসন হাইটসে বিনামূল্যে স্বাস্থ্যসেবা প্রদানে অসামান্য অবদান রেখেছেন। গত ১৫ বছর ধরে তিনি অভিবাসীদের স্বাস্থ্যসেবায় কাজ করে যাচ্ছেন।',
       en: 'Dr. Farhana Akhter has been awarded an honor medal by the Queens Borough President. She has made outstanding contributions to providing free healthcare in Jackson Heights. She has been working in immigrant healthcare for the past 15 years.',
     },
-    image: undefined,
+    image: '/images/news-2.png',
     taxonomy: {
       primaryCategory: 'community',
       secondaryTopic: 'Community Achievement',

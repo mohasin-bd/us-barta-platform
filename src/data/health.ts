@@ -17,7 +17,7 @@ export const mockHealth: HealthItem[] = [
       bn: 'নিউইয়র্ক স্টেট অব হেলথের মাধ্যমে স্বল্প আয়ের বাসিন্দাদের জন্য বিনামূল্যে বা কম খরচে স্বাস্থ্য বীমা পাওয়া সম্ভব। এসেনশিয়াল প্ল্যান, মেডিকেয়ার সেভিংস প্রোগ্রাম এবং চাইল্ড হেলথ প্লাস সম্পর্কে বিস্তারিত তথ্য এবং আবেদন প্রক্রিয়া।',
       en: 'Low-income New York residents may qualify for free or low-cost health insurance through NY State of Health. Detailed information and application process for Essential Plan, Medicare Savings Program, and Child Health Plus.',
     },
-    image: undefined,
+    image: '/images/health-1.png',
     taxonomy: {
       primaryCategory: 'health',
       secondaryTopic: 'Health Insurance',
@@ -44,7 +44,7 @@ export const mockHealth: HealthItem[] = [
       bn: 'নিউইয়র্ক স্টেটে অনেক নতুন অভিবাসী মেডিকেইডের জন্য যোগ্য হতে পারেন, এমনকি যাদের ইমিগ্রেশন স্ট্যাটাস এখনও চলমান থাকলেও। আয়ের সীমা, প্রয়োজনীয় কাগজপত্র এবং আবেদন পদ্ধতি সম্পর্কে বিস্তারিত জানুন। জ্যাকসন হাইটসে সহায়তা পাওয়ার ঠিকানাও দেওয়া হয়েছে।',
       en: 'Many new immigrants in New York State may qualify for Medicaid, even those with pending immigration status. Learn about income limits, required documents, and the application process. Locations for assistance in Jackson Heights are also provided.',
     },
-    image: undefined,
+    image: '/images/health-2.png',
     taxonomy: {
       primaryCategory: 'health',
       secondaryTopic: 'Medicaid',
@@ -71,7 +71,7 @@ export const mockHealth: HealthItem[] = [
       bn: 'মানসিক স্বাস্থ্য সমস্যা নিয়ে কথা বলতে অনেকেই দ্বিধাবোধ করেন। নিউইয়র্কে বাংলায় মানসিক স্বাস্থ্য সেবা পাওয়ার বিভিন্ন উপায় রয়েছে। ক্রাইসিস কাউন্সিলিং, কমিউনিটি সাপোর্ট গ্রুপ এবং বিনামূল্যে থেরাপি সেবার তালিকা এখানে দেওয়া হলো। আপনি একা নন।',
       en: 'Many people hesitate to talk about mental health issues. There are various ways to access mental health services in Bangla in New York. A list of crisis counseling, community support groups, and free therapy services is provided here. You are not alone.',
     },
-    image: undefined,
+    image: '/images/health-1.png',
     taxonomy: {
       primaryCategory: 'health',
       secondaryTopic: 'Mental Health',

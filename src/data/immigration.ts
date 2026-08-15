@@ -12,7 +12,7 @@ export const mockImmigration: ImmigrationItem[] = [
       bn: '২০২৫ সালের অক্টোবর থেকে ইউএসসিআইএস ফি পরিবর্তন হচ্ছে। আই-৪৮৫ গ্রিন কার্ড আবেদনের ফি বেড়ে হবে $২,২৫০ থেকে $২,৮২০। এন-৪০০ নাগরিকত্ব আবেদনের ফি হবে $৭১০ থেকে $৭৮০। ফি-ওয়াইভারের সুযোগ থাকবে যোগ্য আবেদনকারীদের জন্য।',
       en: 'USCIS fees are changing from October 2025. The I-485 Green Card application fee will increase from $2,250 to $2,820. The N-400 citizenship application fee will go from $710 to $780. Fee waivers will remain available for eligible applicants.',
     },
-    image: undefined,
+    image: '/images/immigration-1.png',
     taxonomy: {
       primaryCategory: 'immigration',
       secondaryTopic: 'USCIS Fees',
@@ -43,7 +43,7 @@ export const mockImmigration: ImmigrationItem[] = [
       bn: 'জুলাই ২০২৫ ভিসা বুলেটিন অনুযায়ী, এফ২এ (বিবাহিত সন্তানদের জন্য গ্রিন কার্ড) ক্যাটাগরিতে বাংলাদেশের প্রায়োরিটি ডেট ০১ জানুয়ারি ২০১৮ পর্যন্ত এগিয়েছে। ইবি-১ এবং ইবি-২ ক্যাটাগরিতে কোনো অগ্রগতি হয়নি। পরবর্তী মাসের পূর্বাভাস সহ বিস্তারিত বিশ্লেষণ।',
       en: 'According to the July 2025 Visa Bulletin, the F2A category (Green Card for married children of permanent residents) priority date for Bangladesh has advanced to January 1, 2018. EB-1 and EB-2 categories show no progress. Detailed analysis with next month\'s forecast.',
     },
-    image: undefined,
+    image: '/images/immigration-2.png',
     taxonomy: {
       primaryCategory: 'immigration',
       secondaryTopic: 'Visa Bulletin',
@@ -74,7 +74,7 @@ export const mockImmigration: ImmigrationItem[] = [
       bn: 'এফ-১ ভিসাধারী শিক্ষার্থীদের জন্য ঐচ্ছিক প্র্যাকটিক্যাল ট্রেনিং (ওপিটি) আবেদন প্রক্রিয়া এবং স্টেম ডিগ্রিধারীদের ২৪ মাসের এক্সটেনশনের বিস্তারিত গাইড। কখন আবেদন করবেন, কোন কাগজপত্র লাগবে এবং সাধারণ ভুলগুলো এড়ানোর উপায়।',
       en: 'A detailed guide on the Optional Practical Training (OPT) application process for F-1 visa students and the 24-month extension for STEM degree holders. When to apply, required documents, and how to avoid common mistakes.',
     },
-    image: undefined,
+    image: '/images/immigration-3.png',
     taxonomy: {
       primaryCategory: 'immigration',
       secondaryTopic: 'F-1 OPT',

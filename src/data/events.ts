@@ -12,7 +12,7 @@ export const mockEvents: EventItem[] = [
       bn: 'বার্ষিক কমিউনিটি মেলায় বাংলাদেশি খাবার, সাংস্কৃতিক অনুষ্ঠান, শিশুদের খেলা এবং স্বাস্থ্য সেবা শিবির থাকবে। সবাইকে স্বাগতম।',
       en: 'The annual community fair will feature Bangladeshi food, cultural programs, children\'s games, and a health camp. Everyone is welcome.',
     },
-    image: undefined,
+    image: '/images/event-1.png',
     startDate: '2025-06-22T10:00:00Z',
     endDate: '2025-06-22T18:00:00Z',
     venue: {
@@ -45,7 +45,7 @@ export const mockEvents: EventItem[] = [
       bn: 'বিশিষ্ট ইসলামী স্কলার ড. মোহাম্মদ আলী হাসানের বক্তৃতা। প্রবাসী জীবনে ইসলাম প্র্যাকটিস করার ব্যবহারিক গাইডলাইন। প্রশ্নোত্তর পর্ব থাকবে।',
       en: 'Lecture by renowned Islamic scholar Dr. Mohammad Ali Hasan. Practical guidelines for practicing Islam in expatriate life. A Q&A session will follow.',
     },
-    image: undefined,
+    image: '/images/event-2.png',
     startDate: '2025-06-20T18:30:00Z',
     endDate: '2025-06-20T21:00:00Z',
     venue: {
@@ -78,7 +78,7 @@ export const mockEvents: EventItem[] = [
       bn: 'নিউইয়র্কে বাংলা বই মেলার আয়োজন করা হচ্ছে। বাংলাদেশ ও কলকাতা থেকে প্রকাশকরা অংশ নেবেন। বই প্রদর্শনী, লেখক সাক্ষাৎকার এবং সাংস্কৃতিক অনুষ্ঠান। প্রবেশ মূল্য $৫।',
       en: 'A Bangla Book Fair is being organized in New York. Publishers from Bangladesh and Kolkata will participate. Book exhibition, author interviews, and cultural programs. Entry fee: $5.',
     },
-    image: undefined,
+    image: '/images/event-3.png',
     startDate: '2025-07-05T11:00:00Z',
     endDate: '2025-07-06T20:00:00Z',
     venue: {
@@ -111,7 +111,7 @@ export const mockEvents: EventItem[] = [
       bn: 'হাই স্কুলের শিক্ষার্থী ও তাদের অভিভাবকদের জন্য কলেজে ভর্তির প্রস্তুতি ওয়ার্কশপ। সিটি ইউনিভার্সিটি অফ নিউইয়র্কের প্রবেশকারী কর্মকর্তা উপস্থিত থাকবেন। ফিন্যান্সিয়াল এইড ও স্কলারশিপ নিয়ে আলোচনা। বিনামূল্যে।',
       en: 'College preparation workshop for high school students and their parents. CUNY admissions officers will be present. Discussion on financial aid and scholarships. Free of charge.',
     },
-    image: undefined,
+    image: '/images/event-4.png',
     startDate: '2025-06-28T14:00:00Z',
     endDate: '2025-06-28T17:00:00Z',
     venue: {

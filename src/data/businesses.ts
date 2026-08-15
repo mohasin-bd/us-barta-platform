@@ -12,7 +12,7 @@ export const mockBusinesses: BusinessItem[] = [
       bn: 'জ্যাকসন হাইটসের সবচেয়ে জনপ্রিয় বাংলাদেশি রেস্তোরাঁ। খাঁটি কাচ্চি বিরিয়ানি, মুঘলাই পরোটা এবং বিভিন্ন প্রকার ভুনা খাবার। সকাল ও সন্ধ্যায় খোলা।',
       en: 'The most popular Bangladeshi restaurant in Jackson Heights. Authentic Kacchi Biryani, Mughlai Paratha, and various grilled items. Open for breakfast and dinner.',
     },
-    image: undefined,
+    image: '/images/business-1.png',
     businessName: {
       bn: 'ঢাকা বিরিয়ানি হাউজ',
       en: 'Dhaka Biryani House',
@@ -48,7 +48,7 @@ export const mockBusinesses: BusinessItem[] = [
       bn: 'বাংলাদেশি-আমেরিকান চিকিৎসক ডাঃ আবদুল রহমানের চেম্বার। সাধারণ চিকিৎসা, ডায়াবেটিস ও উচ্চ রক্তচাপ ব্যবস্থাপনা। বাংলা ও ইংরেজি ভাষায় রোগী দেখেন। মেডিকেড ও বেশিরভাগ বীমা গ্রহণ করা হয়।',
       en: 'Clinic of Bangladeshi-American physician Dr. Abdul Rahman. General medicine, diabetes and hypertension management. Sees patients in Bangla and English. Medicaid and most insurance accepted.',
     },
-    image: undefined,
+    image: '/images/business-2.png',
     businessName: {
       bn: 'ডাঃ রহমান মেডিকেল কেয়ার, পিসি',
       en: 'Dr. Rahman Medical Care, PC',
@@ -83,7 +83,7 @@ export const mockBusinesses: BusinessItem[] = [
       bn: 'অ্যাটর্নি নাজমা হাসান ইমিগ্রেশন আইনে বিশেষজ্ঞ। গ্রিন কার্ড, ভিসা, অ্যাসাইলাম এবং ডিপোর্টেশন ডিফেন্স কেস নেন। প্রথম পরামর্শ বিনামূল্যে। বাংলা ভাষায় সেবা প্রদান করা হয়।',
       en: 'Attorney Nazma Hasan specializes in immigration law. Handles Green Card, visa, asylum, and deportation defense cases. Free initial consultation. Services available in Bangla.',
     },
-    image: undefined,
+    image: '/images/business-3.png',
     businessName: {
       bn: 'হাসান ইমিগ্রেশন ল এলএলসি',
       en: 'Hasan Immigration Law LLC',
@@ -118,7 +118,7 @@ export const mockBusinesses: BusinessItem[] = [
       bn: 'জীবন বীমা, স্বাস্থ্য বীমা, গাড়ি বীমা এবং ব্যবসায়িক বীমা সেবা। বাংলা ও ইংরেজিতে পরামর্শ সেবা। নিউইয়র্ক স্টেটে লাইসেন্সপ্রাপ্ত বীমা এজেন্ট। বাংলাদেশি কমিউনিটির জন্য বিশেষ প্যাকেজ আছে।',
       en: 'Life insurance, health insurance, auto insurance, and business insurance services. Consultation in Bangla and English. Licensed insurance agent in New York State. Special packages for the Bangladeshi community.',
     },
-    image: undefined,
+    image: '/images/business-4.png',
     businessName: {
       bn: 'বাংলা ইন্স্যুরেন্স এজেন্সি',
       en: 'Bangla Insurance Agency',

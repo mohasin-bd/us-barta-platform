@@ -12,6 +12,7 @@ export const mockJobs: JobItem[] = [
       bn: 'জ্যাকসন হাইটসে অবস্থিত একটি বাংলাদেশি মালিকানাধীন অ্যাকাউন্টিং ফার্মে স্টাফ অ্যাকাউন্ট্যান্ট পদে লোক নেওয়া হচ্ছে। কুইকবুকস জ্ঞান থাকতে হবে। বাংলা ও ইংরেজি উভয় ভাষায় কথা বলতে পারলে অগ্রাধিকার দেওয়া হবে।',
       en: 'A Bangladeshi-owned accounting firm in Jackson Heights is hiring a Staff Accountant. QuickBooks knowledge required. Bilingual in Bangla and English is preferred.',
     },
+    image: '/images/jobs-1.png',
     company: {
       bn: 'আল-আমিন অ্যাকাউন্টিং সার্ভিসেস',
       en: 'Al-Amin Accounting Services',
@@ -44,6 +45,7 @@ export const mockJobs: JobItem[] = [
       bn: 'উডসাইডে একটি ছোট আইটি কোম্পানিতে পার্ট-টাইম হেল্প ডেস্ক টেকনিশিয়ান দরকার। সপ্তাহে ২০ ঘণ্টা, নমনীয় সময়সূচী। কম্পিউটার হার্ডওয়্যার ও বেসিক নেটওয়ার্কিং জ্ঞান প্রয়োজন। শিক্ষার্থীদের জন্য উপযুক্ত।',
       en: 'A small IT company in Woodside needs a part-time help desk technician. 20 hours per week, flexible schedule. Computer hardware and basic networking knowledge required. Suitable for students.',
     },
+    image: '/images/jobs-2.png',
     company: {
       bn: 'টেকসলিউশন এলএলসি',
       en: 'TechSolve LLC',
@@ -76,6 +78,7 @@ export const mockJobs: JobItem[] = [
       bn: 'নিউইয়র্কের একটি স্বাস্থ্যসেবা প্রতিষ্ঠানে রিমোট মেডিকেল বিলিং স্পেশালিস্ট পদে নিয়োগ। ঘর থেকে কাজ করার সুযোগ। মেডিকেল কোডিং (ICD-10, CPT) এর অভিজ্ঞতা প্রয়োজন। বাংলাদেশি অভিবাসীদের জন্য এটি একটি চমৎকার সুযোগ।',
       en: 'A New York healthcare facility is hiring a remote medical billing specialist. Work from home opportunity. Experience with medical coding (ICD-10, CPT) required. An excellent opportunity for Bangladeshi immigrants.',
     },
+    image: '/images/jobs-3.png',
     company: {
       bn: 'কেয়ামেড হেলথ সার্ভিসেস',
       en: 'CareMed Health Services',
@@ -108,6 +111,7 @@ export const mockJobs: JobItem[] = [
       bn: 'জ্যাকসন হাইটসের একটি বাংলাদেশি রেস্তোরাঁয় ডেলিভারি ড্রাইভার ইন্টার্নশিপের সুযোগ। নমনীয় সময়সূচী, প্রতি ঘণ্টায় $১৬ প্লাস টিপস। নতুন এসেছেন এমন তরুণদের জন্য এটি ভালো সুযোগ। ড্রাইভিং লাইসেন্স থাকতে হবে।',
       en: 'Delivery driver internship opportunity at a Bangladeshi restaurant in Jackson Heights. Flexible schedule, $16 per hour plus tips. A good opportunity for newly arrived young people. A valid driver’s license is required.',
     },
+    image: '/images/jobs-4.png',
     company: {
       bn: 'ঢাকা কিচেন রেস্তোরাঁ',
       en: 'Dhaka Kitchen Restaurant',

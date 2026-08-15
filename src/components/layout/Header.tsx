@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   MapPin, Sun, Bell, User, Search, Menu, X,
 } from 'lucide-react';
@@ -13,6 +14,7 @@ import { SearchBar } from '@/components/common/SearchBar';
 import { PrimaryNav } from '@/components/navigation/PrimaryNav';
 import { MobileNav } from '@/components/navigation/MobileNav';
 import { LanguageSwitcher } from '@/components/navigation/LanguageSwitcher';
+import { NewsTicker } from '@/components/common/NewsTicker';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -70,18 +72,29 @@ export function Header() {
         </div>
       </div>
 
-      {/* Branding Row */}
-      <div className="hidden md:block">
-        <div className="mx-auto max-w-[1280px] px-6">
-          <div className="flex items-center gap-4 py-3">
-            <Image
-              src="/logo.png"
-              alt="US BARTA"
-              width={180}
-              height={56}
-              priority
-              className="h-12 w-auto object-contain"
-            />
+      {/* Branding Row with News Ticker */}
+      <div className='hidden md:block border-t border-gray-50'>
+        <div className='mx-auto max-w-[1280px] px-6'>
+          <div className='flex items-center gap-6 py-2.5'>
+            {/* Large Logo */}
+            <Link href='/' className='flex-shrink-0'>
+              <Image
+                src='/logo.png'
+                alt='US BARTA'
+                width={220}
+                height={70}
+                priority
+                className='h-14 w-auto object-contain'
+              />
+            </Link>
+
+            {/* Divider */}
+            <div className='w-px h-8 bg-gray-200 flex-shrink-0' />
+
+            {/* News Ticker */}
+            <div className='flex-1 min-w-0'>
+              <NewsTicker />
+            </div>
           </div>
         </div>
       </div>

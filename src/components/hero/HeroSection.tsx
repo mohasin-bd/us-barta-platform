@@ -22,7 +22,7 @@ export function HeroSection() {
           priority
           sizes='100vw'
         />
-        <div className='absolute inset-0 bg-gradient-to-r from-[#0a1929]/85 via-[#0f2557]/50 to-transparent' />
+        <div className='absolute inset-0 bg-gradient-to-r from-[#0a1929]/60 via-[#0f2557]/25 to-transparent' />
       </div>
 
       {/* Content */}

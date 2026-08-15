@@ -12,7 +12,7 @@ export const mockEducation: EducationItem[] = [
       bn: 'ফেডারেল শিক্ষা বিভাগ এফএএফএসএ ২০২৫-২৬ আর্থিক সহায়তার আবেদনের সময়সীমা জুন ৩০ থেকে সেপ্টেম্বর ১৫ পর্যন্ত বাড়িয়েছে। বাংলাদেশি-আমেরিকান পরিবারগুলোর জন্য এটি একটি গুরুত্বপূর্ণ সুযোগ। আবেদন করার ধাপে ধাপে নির্দেশনা এখানে দেওয়া হলো।',
       en: 'The Department of Education has extended the FAFSA 2025-26 financial aid application deadline from June 30 to September 15. This is an important opportunity for Bangladeshi-American families. Step-by-step instructions for applying are provided here.',
     },
-    image: undefined,
+    image: '/images/education-1.png',
     taxonomy: {
       primaryCategory: 'education',
       secondaryTopic: 'Financial Aid',
@@ -40,7 +40,7 @@ export const mockEducation: EducationItem[] = [
       bn: 'নতুন এসেছেন এমন বাংলাভাষী পরিবারগুলোর জন্য নিউইয়র্ক সিটির পাবলিক স্কুলে ভর্তি প্রক্রিয়া সহজ করতে এই গাইড তৈরি করা হয়েছে। কিন্ডারগার্টেন থেকে হাই স্কুল পর্যন্ত ভর্তির সময়সূচি, প্রয়োজনীয় কাগজপত্র এবং বাংলা ভাষা সহায়তা সম্পর্কে বিস্তারিত।',
       en: 'This guide is designed to make the NYC public school enrollment process easier for newly arrived Bengali-speaking families. Detailed information about enrollment timelines from kindergarten through high school, required documents, and Bangla language support services.',
     },
-    image: undefined,
+    image: '/images/education-2.png',
     taxonomy: {
       primaryCategory: 'education',
       secondaryTopic: 'School Enrollment',
@@ -68,7 +68,7 @@ export const mockEducation: EducationItem[] = [
       bn: 'মার্কিন যুক্তরাষ্ট্রে অধ্যয়নরত বাংলাদেশি শিক্ষার্থীদের জন্য ২০২৫ সালে আবেদন করা যাবে এমন কয়েকটি উল্লেখযোগ্য স্কলারশিপের তালিকা। এগুলোর মধ্যে রয়েছে অ্যাগাহ খান ফাউন্ডেশন, ফুলব্রাইট, এবং বিভিন্ন বিশ্ববিদ্যালয়ের মেধা ভিত্তিক স্কলারশিপ।',
       en: 'A list of notable scholarships available for Bangladeshi students studying in the US in 2025. These include the Aga Khan Foundation, Fulbright, and various university merit-based scholarships.',
     },
-    image: undefined,
+    image: '/images/education-1.png',
     taxonomy: {
       primaryCategory: 'education',
       secondaryTopic: 'Scholarships',
