@@ -1,0 +1,282 @@
+import type { Article, ArticlePageData } from '@/types/article';
+
+export const sampleArticle: Article = {
+  id: 'article-immigration-policy-2026',
+  slug: 'us-immigration-policy-changes-2026',
+  title: {
+    bn: 'যুক্তরাষ্ট্রের নতুন ইমিগ্রেশন নীতিতে কী পরিবর্তন এসেছে—বাংলাদেশি-আমেরিকানদের জন্য যা জানা জরুরি',
+    en: 'What Changed in US Immigration Policy — What Bangladeshi-Americans Need to Know',
+  },
+  summary: {
+    bn: 'নতুন নীতির গুরুত্বপূর্ণ পরিবর্তন, সম্ভাব্য প্রভাব এবং বাংলাদেশি-আমেরিকানদের জন্য করণীয়।',
+    en: 'Key changes in the new policy, potential impact, and what Bangladeshi-Americans should do.',
+  },
+  category: 'immigration',
+  categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+  heroImage: '/images/article-immigration-hero.png',
+  heroImageCaption: {
+    bn: 'যুক্তরাষ্ট্রের ইমিগ্রেশন নীতিতে পরিবর্তনের প্রভাব নিয়ে বাংলাদেশি-আমেরিকানদের মধ্যে আগ্রহ বাড়ছে।',
+    en: 'Interest is growing among Bangladeshi-Americans regarding the impact of changes in US immigration policy.',
+  },
+  author: {
+    name: 'US BARTA News Desk',
+    title: 'Editorial Team',
+  },
+  publishedAt: '2026-08-16T08:00:00Z',
+  updatedAt: '2026-08-16T14:30:00Z',
+  readTimeMinutes: 5,
+  tags: ['ইমিগ্রেশন', 'ভিসা', 'গ্রিন কার্ড', 'H-1B', 'USCIS', 'নীতি পরিবর্তন'],
+  seo: {
+    title: 'যুক্তরাষ্ট্রের নতুন ইমিগ্রেশন নীতিতে কী পরিবর্তন এসেছে | US BARTA',
+    description: 'বাংলাদেশি-আমেরিকানদের জন্য নতুন ইমিগ্রেশন নীতির পরিবর্তন, সম্ভাব্য প্রভাব এবং করণীয় সম্পর্কে বিস্তারিত তথ্য।',
+    ogImage: '/images/article-immigration-hero.png',
+  },
+  body: [
+    // INTRO
+    {
+      type: 'paragraph',
+      content: 'যুক্তরাষ্ট্রের ইমিগ্রেশন নীতিতে সাম্প্রতিক কিছু গুরুত্বপূর্ণ পরিবর্তন এসেছে যা বাংলাদেশি-আমেরিকান কমিউনিটির জীবনে প্রত্যক্ষ প্রভাব ফেলতে পারে। নতুন নির্বাহী আদেশটি গ্রিন কার্ড প্রক্রিয়া, কর্মসংস্থানভিত্তিক ভিসা এবং পরিবার পুনর্মিলনের ক্ষেত্রে ব্যাপক পরিবর্তন আনছে। এই পরিবর্তনগুলো শুধু নতুন আবেদনকারীদের জন্যই নয়, বরং যারা ইতিমধ্যে প্রক্রিয়াধীন আছেন তাদের জন্যও গুরুত্বপূর্ণ।',
+    },
+    {
+      type: 'paragraph',
+      content: 'US BARTA এই প্রতিবেদনে সহজ ভাষায় বুঝিয়ে বলছে নতুন নীতিতে ঠিক কী পরিবর্তন এসেছে, কারা বেশি প্রভাবিত হবেন এবং এখন কী করা উচিত। তবে মনে রাখবেন, এটি সাধারণ তথ্য — ব্যক্তিগত পরামর্শের বিকল্প নয়।',
+    },
+    {
+      type: 'paragraph',
+      content: 'ইমিগ্রেশন বিষয়ক আইনজীবী এবং কমিউনিটি নেতাদের মতে, এই পরিবর্তনগুলো বিশেষ করে নিউইয়র্ক, নিউজার্সি এবং ক্যালিফোর্নিয়ায় বসবাসকারী বাংলাদেশি-আমেরিকানদের জন্য তাৎপর্যপূর্ণ, কারণ এই অঙ্গরাজ্যগুলোতে সবচেয়ে বেশি সংখ্যক বাংলাদেশি অভিবাসী বাস করেন।',
+    },
+
+    // MAIN CHANGES
+    {
+      type: 'heading',
+      title: 'মূল পরিবর্তনগুলো কী?',
+      content: '',
+    },
+    {
+      type: 'paragraph',
+      content: 'নতুন নির্বাহী আদেশে মোট পাঁচটি প্রধান ক্ষেত্রে পরিবর্তন এসেছে। প্রতিটি পরিবর্তনের বিস্তারিত বিবরণ নিচে দেওয়া হলো:',
+    },
+    {
+      type: 'bullet-list',
+      content: '',
+      items: [
+        'গ্রিন কার্ড আবেদনের জন্য আবশ্যকীয় নথিপত্রের তালিকা আপডেট করা হয়েছে। এখন থেকে অতিরিক্ত দুটি ফর্ম জমা দিতে হবে যা আগে ঐচ্ছিক ছিল।',
+        'H-1B ভিসার জন্য বার্ষিক কোটা বৃদ্ধি করা হয়েছে। নতুন নিয়মে প্রথমবারের মতো মাস্টার্স ডিগ্রিধারীদের জন্য আলাদা কোটা রাখা হয়েছে।',
+        'পরিবারভিত্তিক ভিসার প্রক্রিয়াকরণ সময় কমানো হয়েছে। আগে যেখানে গড়ে ২৪ মাস সময় লাগতো, সেখানে এখন লক্ষ্য ১৮ মাসে নামিয়ে আনা।',
+        'ড্রিমার্স এবং টিপিএস ধারকদের জন্য নতুন সুরক্ষা ব্যবস্থা চালু হয়েছে যা পূর্ববর্তী প্রশাসনের সময় বাতিল করা হয়েছিল।',
+        'নাগরিকত্ব পরীক্ষার জন্য নতুন ইংরেজি ভাষা প্রয়োজনীয়তা শিথিল করা হয়েছে। ৫৫ বছরের বেশি বয়সী আবেদনকারীদের জন্য বিশেষ বিবেচনা দেওয়া হবে।',
+      ],
+    },
+
+    // HIGHLIGHT BOX
+    {
+      type: 'highlight-box',
+      title: 'সহজ ভাষায় বুঝুন',
+      content: 'সহজ কথায় বলতে গেলে, সরকার বলছে: গ্রিন কার্ড পেতে এখন থেকে একটু বেশি কাগজপত্র লাগবে, কিন্তু H-1B কাজের ভিসায় সুযোগ বাড়বে। পরিবারের সদস্যদের জন্য ভিসা পেতে আগের চেয়ে কম সময় লাগবে। আর যারা দীর্ঘদিন ধরে যুক্তরাষ্ট্রে আছেন কিন্তু নাগরিকত্ব নিতে পারেননি, তাদের জন্য নতুন সুযোগ এসেছে।',
+    },
+
+    // IMPACT ON BANGLADESHI-AMERICANS
+    {
+      type: 'heading',
+      title: 'বাংলাদেশি-আমেরিকানদের ওপর সম্ভাব্য প্রভাব',
+      content: '',
+    },
+    {
+      type: 'paragraph',
+      content: 'এই পরিবর্তনগুলো বাংলাদেশি-আমেরিকান কমিউনিটির বিভিন্ন স্তরে প্রভাব ফেলবে। বিশেষ করে যারা নিচের পরিস্থিতিতে আছেন তাদের জন্য এই পরিবর্তনগুলো গুরুত্বপূর্ণ:',
+    },
+    {
+      type: 'bullet-list',
+      content: '',
+      items: [
+        'যারা সম্প্রতি গ্রিন কার্ডের জন্য আবেদন করার পরিকল্পনা করছেন, তাদের নতুন কাগজপত্রের প্রস্তুতি নেওয়া উচিত।',
+        'H-1B ভিসায় আগ্রহী পেশাদারদের জন্য নতুন কোটা সুবিধাজনক হতে পারে, বিশেষ করে যাদের মাস্টার্স ডিগ্রি আছে।',
+        'পরিবারের সদস্যদের জন্য ভিসা আবেদনের অপেক্ষার সময় কমতে পারে, যা দীর্ঘদিন ধরে পৃথক পরিবারে থাকা অনেকের জন্য সুসংবাদ।',
+        'নাগরিকত্ব পরীক্ষার ইংরেজি প্রয়োজনীয়তা শিথিল হওয়ায় বয়স্ক বাংলাদেশি অভিবাসীদের জন্য নাগরিকত্ব পাওয়া সহজ হতে পারে।',
+      ],
+    },
+
+    // WHO IS MOST AFFECTED
+    {
+      type: 'heading',
+      title: 'কারা বেশি প্রভাবিত হতে পারেন?',
+      content: '',
+    },
+    {
+      type: 'structured-list',
+      content: '',
+      structuredItems: [
+        {
+          label: 'নতুন অভিবাসন আবেদনকারী',
+          description: 'যারা এখনই যুক্তরাষ্ট্রে আসার পরিকল্পনা করছেন, তাদের নতুন প্রক্রিয়া অনুসরণ করতে হবে। কিছু ক্ষেত্রে প্রস্তুতির সময় বেশি লাগতে পারে।',
+        },
+        {
+          label: 'পরিবারভিত্তিক আবেদনকারী',
+          description: 'স্বামী/স্ত্রী বা অভিভাবকের মাধ্যমে আবেদনকারীদের জন্য ভালো খবর — প্রক্রিয়া দ্রুততর হচ্ছে। তবে নতুন কাগজপত্রের প্রস্তুতি দরকার।',
+        },
+        {
+          label: 'H-1B / employment-based applicants',
+          description: 'মাস্টার্স ডিগ্রিধারীদের জন্য আলাদা কোটা একটি বড় সুযোগ। বাংলাদেশি পেশাদারদের মধ্যে যাদের উচ্চ শিক্ষা আছে তারা এই সুবিধা নিতে পারবেন।',
+        },
+        {
+          label: 'International students',
+          description: 'যুক্তরাষ্ট্রে অধ্যয়নরত বাংলাদেশি শিক্ষার্থীদের জন্য OPT এবং H-1B পরিবর্তনের নতুন সুযোগ তৈরি হয়েছে। গ্র্যাজুয়েশনের পর কাজের অনুমতি পাওয়া সহজ হতে পারে।',
+        },
+        {
+          label: 'Green Card applicants',
+          description: 'যারা ইতিমধ্যে গ্রিন কার্ডের জন্য অপেক্ষমান, তাদের কিছু ক্ষেত্রে অতিরিক্ত তথ্য জমা দিতে হতে পারে। তবে সামগ্রিক সময়রেখা উন্নত হতে পারে।',
+        },
+      ],
+    },
+
+    // WHAT SHOULD YOU DO
+    {
+      type: 'heading',
+      title: 'আপনার কী করা উচিত?',
+      content: '',
+    },
+    {
+      type: 'practical-steps',
+      content: '',
+      items: [
+        'নতুন প্রক্রিয়া সম্পর্কে আপডেট থাকুন — USCIS ওয়েবসাইট (uscis.gov) নিয়মিত চেক করুন।',
+        'আপনার সব ইমিগ্রেশন সংক্রান্ত নথিপত্র সংগঠিত রাখুন। বিশেষ করে পাসপোর্ট, ভিসা, I-94 এবং পূর্ববর্তী আবেদনের কপি।',
+        'একজন যোগ্য ইমিগ্রেশন আইনজীবীর সাথে পরামর্শ করুন, বিশেষ করে যদি আপনার প্রক্রিয়া চলমান থাকে।',
+        'আপনার পরিচিত কমিউনিটি সদস্যদের এই তথ্য শেয়ার করুন — অনেকেই হয়তো এই পরিবর্তন সম্পর্কে জানেন না।',
+        'US BARTA-এর ইমিগ্রেশন সেকশন ফলো করুন — আমরা নিয়মিত আপডেট প্রকাশ করি।',
+      ],
+    },
+
+    // DISCLAIMER
+    {
+      type: 'disclaimer',
+      content: 'এই প্রতিবেদনটি সাধারণ তথ্যের জন্য। এটি কোনো আইনি পরামর্শ নয়। আপনার ব্যক্তিগত পরিস্থিতির জন্য একজন যোগ্য immigration attorney বা accredited representative-এর পরামর্শ নিন।',
+    },
+  ],
+  relatedArticles: [
+    {
+      id: 'rel-1',
+      slug: 'uscis-fee-schedule-change-2026',
+      title: { bn: 'ইউএসসিআইএস ফি পরিবর্তন ২০২৬: কী বাড়ছে কী কমছে', en: 'USCIS Fee Changes 2026: What\'s Increasing and Decreasing' },
+      summary: { bn: '২০২৬ সালের নতুন ফি কাঠামো এবং ফি-ওয়াইভারের যোগ্যতা।', en: 'New fee structure for 2026 and fee waiver eligibility.' },
+      image: '/images/immigration-1.png',
+      category: 'immigration',
+      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+      publishedAt: '2026-08-14T08:00:00Z',
+      readTimeMinutes: 4,
+    },
+    {
+      id: 'rel-2',
+      slug: 'h1b-masters-cap-explained',
+      title: { bn: 'H-1B মাস্টার্স ক্যাপ: বাংলাদেশি স্নাতকোত্তরদের জন্য নতুন সুযোগ', en: 'H-1B Masters Cap: New Opportunity for Bangladeshi Graduates' },
+      image: '/images/immigration-2.png',
+      category: 'immigration',
+      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+      publishedAt: '2026-08-12T08:00:00Z',
+      readTimeMinutes: 6,
+    },
+    {
+      id: 'rel-3',
+      slug: 'family-visa-processing-faster',
+      title: { bn: 'পরিবারভিত্তিক ভিসা প্রক্রিয়া এখন দ্রুততর', en: 'Family-Based Visa Processing Now Faster' },
+      image: '/images/immigration-3.png',
+      category: 'immigration',
+      categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+      publishedAt: '2026-08-10T08:00:00Z',
+      readTimeMinutes: 3,
+    },
+  ],
+  disclaimer: {
+    bn: 'এই প্রতিবেদনটি সাধারণ তথ্যের জন্য। এটি কোনো আইনি পরামর্শ নয়। আপনার ব্যক্তিগত পরিস্থিতির জন্য একজন যোগ্য immigration attorney বা accredited representative-এর পরামর্শ নিন।',
+    en: 'This report is for general informational purposes only. It is not legal advice. Please consult a qualified immigration attorney or accredited representative for your personal situation.',
+  },
+};
+
+// Sidebar and recommendation mock data
+export const sidebarRelated: ArticlePageData['sidebarRelated'] = [
+  {
+    id: 'side-1', slug: 'green-card-interview-tips',
+    title: { bn: 'গ্রিন কার্ড ইন্টারভিউ: প্রস্তুতির ১০টি টিপস', en: 'Green Card Interview: 10 Preparation Tips' },
+    image: '/images/immigration-4.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-13T08:00:00Z', readTimeMinutes: 5,
+  },
+  {
+    id: 'side-2', slug: 'daca-tps-update-bangladeshi',
+    title: { bn: 'ড্যাকা ও টিপিএস: বাংলাদেশিদের জন্য নতুন আপডেট', en: 'DACA and TPS: New Updates for Bangladeshis' },
+    image: '/images/immigration-5.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-11T08:00:00Z', readTimeMinutes: 4,
+  },
+  {
+    id: 'side-3', slug: 'citizenship-test-changes',
+    title: { bn: 'নাগরিকত্ব পরীক্ষার নতুন প্রশ্ন ২০২৬', en: 'New Citizenship Test Questions 2026' },
+    image: '/images/immigration-6.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-09T08:00:00Z', readTimeMinutes: 3,
+  },
+];
+
+export const sidebarNews: ArticlePageData['sidebarNews'] = [
+  {
+    id: 'sn-1', slug: 'ny-housing-cost-rise',
+    title: { bn: 'নিউইয়র্কে বাসস্থান খরচ বাড়ছে', en: 'NY Housing Costs Rising' },
+    category: 'life-in-america',
+    categoryLabel: { bn: 'আমেরিকার জীবন', en: 'Life in America' },
+    publishedAt: '2026-08-15T10:00:00Z',
+  },
+  {
+    id: 'sn-2', slug: 'scholarship-bangladeshi-students',
+    title: { bn: 'বাংলাদেশি শিক্ষার্থীদের জন্য নতুন স্কলারশিপ', en: 'New Scholarships for Bangladeshi Students' },
+    category: 'education',
+    categoryLabel: { bn: 'শিক্ষা', en: 'Education' },
+    publishedAt: '2026-08-15T08:00:00Z',
+  },
+  {
+    id: 'sn-3', slug: 'jackson-heights-job-fair',
+    title: { bn: 'জ্যাকসন হাইটসে চাকরি মেলা', en: 'Jackson Heights Job Fair' },
+    category: 'jobs-career',
+    categoryLabel: { bn: 'চাকরি ও ক্যারিয়ার', en: 'Jobs & Career' },
+    publishedAt: '2026-08-14T12:00:00Z',
+  },
+  {
+    id: 'sn-4', slug: 'community-health-camp',
+    title: { bn: 'কমিউনিটি স্বাস্থ্য শিবির শুরু', en: 'Community Health Camp Begins' },
+    category: 'health',
+    categoryLabel: { bn: 'স্বাস্থ্য', en: 'Health' },
+    publishedAt: '2026-08-14T06:00:00Z',
+  },
+];
+
+export const recommendedForYou: ArticlePageData['recommendedForYou'] = [
+  {
+    id: 'rec-1', slug: 'work-permit-options',
+    title: { bn: 'কাজের অনুমতির বিকল্প বিকল্প', en: 'Work Permit Alternatives' },
+    image: '/images/immigration-7.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-08T08:00:00Z', readTimeMinutes: 7,
+  },
+  {
+    id: 'rec-2', slug: 'immigration-lawyer-guide',
+    title: { bn: 'কীভাবে সঠিক ইমিগ্রেশন আইনজীবী বাছবেন', en: 'How to Choose the Right Immigration Lawyer' },
+    image: '/images/immigration-8.png', category: 'immigration',
+    categoryLabel: { bn: 'ইমিগ্রেশন', en: 'Immigration' },
+    publishedAt: '2026-08-06T08:00:00Z', readTimeMinutes: 5,
+  },
+  {
+    id: 'rec-3', slug: ' OPT-to-h1b-transition',
+    title: { bn: 'OPT থেকে H-1B: সম্পূর্ণ গাইড', en: 'OPT to H-1B: Complete Guide' },
+    image: '/images/immigration-2.png', category: 'education',
+    categoryLabel: { bn: 'শিক্ষা', en: 'Education' },
+    publishedAt: '2026-08-04T08:00:00Z', readTimeMinutes: 8,
+  },
+];
+
+export function getArticlePageData(): ArticlePageData {
+  return {
+    article: sampleArticle,
+    sidebarRelated,
+    sidebarNews,
+    recommendedForYou,
+  };
+}
