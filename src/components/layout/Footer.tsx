@@ -125,11 +125,22 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright Bar */}
-        <div className='border-t border-white/10 mt-8 pt-5 text-center'>
-          <p className='text-xs text-white/40'>
-            {getLocalizedText(t.footer.copyright, language)}
-          </p>
+        {/* Publisher & Copyright Bar */}
+        <div className='border-t border-white/10 mt-8 pt-5'>
+          <div className='text-center space-y-1.5'>
+            <p className='text-xs text-white/50 font-medium'>
+              © 2016 US BARTA. All rights reserved.
+            </p>
+            <div className='space-y-0.5'>
+              <p className='text-xs text-white/40'>
+                Published by <span className='text-white/60 font-medium'>Md. Mohasin Billah</span>
+              </p>
+              <p className='text-[11px] text-white/35'>Founder & Publisher</p>
+            </div>
+            <p className='text-[11px] text-white/30 mt-1'>
+              501 Silverside Rd, STE 105 #4896, Wilmington, Delaware 19806, USA
+            </p>
+          </div>
         </div>
       </div>
     </footer>

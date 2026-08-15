@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  MapPin, Sun, Bell, User, Search, Menu, X,
+  MapPin, Sun, Bell, User, Search, Menu,
 } from 'lucide-react';
 import { useLanguageStore } from '@/store/preferences';
 import { useLanguage } from '@/hooks/use-language';
@@ -75,8 +75,8 @@ export function Header() {
       {/* Branding Row with News Ticker */}
       <div className='hidden md:block border-t border-gray-50'>
         <div className='mx-auto max-w-[1280px] px-6'>
-          <div className='flex items-center gap-6 py-2.5'>
-            {/* Large Logo */}
+          <div className='flex items-center gap-6 py-2'>
+            {/* Large Logo — 170px wide, minimal vertical padding */}
             <Link href='/' className='flex-shrink-0'>
               <Image
                 src='/logo.png'
@@ -84,7 +84,7 @@ export function Header() {
                 width={220}
                 height={70}
                 priority
-                className='h-14 w-auto object-contain'
+                className='h-12 w-[170px] object-contain'
               />
             </Link>
 

@@ -22,20 +22,21 @@ export function HeroSection() {
           priority
           sizes='100vw'
         />
-        <div className='absolute inset-0 bg-gradient-to-r from-[#0a1929]/60 via-[#0f2557]/25 to-transparent' />
+        {/* Lighter overlay — warm navy gradient, minimal opacity to let the bright image show through */}
+        <div className='absolute inset-0 bg-gradient-to-r from-[#0f2557]/45 via-[#0f2557]/15 to-transparent' />
       </div>
 
       {/* Content */}
       <div className='relative mx-auto max-w-[1280px] px-4 sm:px-6 py-20 sm:py-28 md:py-36'>
         <div className='max-w-2xl'>
           {/* Positioning Statement - Platform Identity */}
-          <h1 className='text-xl sm:text-2xl md:text-[28px] font-bold text-white leading-relaxed sm:leading-relaxed md:leading-relaxed mb-5'>
+          <h1 className='text-xl sm:text-2xl md:text-[28px] font-bold text-white leading-relaxed sm:leading-relaxed md:leading-relaxed mb-5 drop-shadow-lg'>
             {language === 'bn'
               ? 'বাংলাদেশি-আমেরিকানদের জন্য America-কে বোঝা ও জীবনকে সহজ করার AI-চালিত প্ল্যাটফর্ম।'
               : 'An AI-powered platform for Bangladeshi-Americans to understand America and make life easier.'}
           </h1>
 
-          <p className='text-sm sm:text-base text-white/60 mb-8 max-w-lg'>
+          <p className='text-sm sm:text-base text-white/80 mb-8 max-w-lg drop-shadow-md'>
             {getLocalizedText(t.hero.microcopy, language)}
           </p>
 

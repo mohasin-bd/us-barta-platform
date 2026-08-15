@@ -160,7 +160,7 @@ export const t = {
     termsOfService: { bn: 'সেবার শর্তাবলী', en: 'Terms of Service' },
     faq: { bn: 'সাধারণ প্রশ্ন', en: 'FAQ' },
     advertise: { bn: 'বিজ্ঞাপন', en: 'Advertise' },
-    copyright: { bn: '© ২০২৫ US BARTA. সর্বস্বত্ব সংরক্ষিত।', en: '© 2025 US BARTA. All Rights Reserved.' },
+    copyright: { bn: '© ২০১৬ US BARTA. সর্বস্বত্ব সংরক্ষিত।', en: '© 2016 US BARTA. All rights reserved.' },
     description: {
       bn: 'বাংলাদেশি-আমেরিকানদের জন্য বিশ্বস্ত বাংলা প্ল্যাটফর্ম। খবর, তথ্য, নির্দেশনা ও কমিউনিটি সংযোগ।',
       en: 'A trusted Bangla platform for Bangladeshi-Americans. News, information, guidance, and community connection.',

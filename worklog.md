@@ -143,3 +143,32 @@ Stage Summary:
 - Entertainment: Featured large card + 3 ecosystem cards (বাংলাদেশ/ভারত/হলিউড) with images and colored badges
 - All major sections have editorial imagery (News 4, Education 2, Entertainment 4, Business 3 = 13 visible images)
 - 28 total images generated and mapped to mock data
+---
+Task ID: visual-polish-brand-consistency
+Agent: Main Agent
+Task: Visual Polish & Brand Consistency Phase - Hero, Logo, Ticker, Quick Access, Footer, Duplicate Heading
+
+Work Log:
+- Generated new bright, warm Statue of Liberty hero image (golden morning sunlight, clearly recognizable, Manhattan skyline in background)
+- Updated HeroSection: reduced overlay opacity from /60 to /45, changed text-white/60 to text-white/80 for better contrast, added drop-shadow to h1 and subtitle
+- Increased desktop logo from h-14/w-auto to h-12/w-[170px] (170px wide, within 150-180px target), reduced vertical padding from py-2.5 to py-2
+- Redesigned NewsTicker: added bg-[#fef2f2] (light red-tinted) background, updated headlines to match user spec (4 items with • separators), increased text weight to font-medium, rounded container
+- Redesigned CategoryQuickLinks: removed monochrome gray, added per-category distinct color map (immigration=red, life-in-america=blue, education=orange, health=green, islamic=navy, community=purple, jobs=teal, entertainment=pink), increased icon container to w-12 h-12, removed borders
+- Removed duplicate 'আজকের গুরুত্বপূর্ণ খবর' heading from NewsSection (kept only in parent HomePageContent)
+- Updated Footer: replaced 2025 with 2016 in both component and translation dict, added publisher block (© 2016 US BARTA, Md. Mohasin Billah - Founder & Publisher, 501 Silverside Rd address)
+- Renamed hero image file to bust Next.js image cache
+
+Browser Verification:
+- ✅ Desktop (1920px): Statue of Liberty clearly visible in hero, logo ~170px, ticker with red bg + badge, colored quick access icons, single news heading, 2016 footer with publisher info
+- ✅ Tablet (768px): Logo visible, ticker visible, layout responsive
+- ✅ Mobile (375px): Proper single-column layout, no horizontal scroll, hero visible, touch-friendly elements
+- ✅ ESLint: 0 errors
+- ✅ Browser console: 0 errors
+
+Stage Summary:
+- Hero: Bright, warm Statue of Liberty clearly recognizable, minimal overlay
+- Logo: 170px wide on desktop, prominent in branding row
+- Ticker: Red-tinted background, red সর্বশেষ badge, • separated headlines
+- Quick Access: 8 distinct category colors (red, blue, orange, green, navy, purple, teal, pink)
+- News: Single heading (duplicate removed)
+- Footer: 2016, Md. Mohasin Billah, Delaware address, professionally formatted
