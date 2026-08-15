@@ -49,7 +49,7 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
         {/* Logo + Close */}
         <SheetHeader className='px-4 pt-4 pb-2'>
           <SheetTitle className='flex items-center justify-between'>
-            <Image src='/logo.png' alt='US BARTA' width={140} height={44} className='h-10 w-auto object-contain' />
+            <Image src='/logo.png' alt='US BARTA' width={1365} height={517} className='h-8 w-auto object-contain' />
           </SheetTitle>
         </SheetHeader>
 

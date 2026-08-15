@@ -32,9 +32,9 @@ export function Footer() {
             <Image
               src='/logo.png'
               alt='US BARTA'
-              width={160}
-              height={50}
-              className='h-11 w-auto object-contain brightness-0 invert mb-4'
+              width={1365}
+              height={517}
+              className='w-[140px] h-auto object-contain mb-4'
             />
             <p className='text-sm text-white/60 leading-relaxed max-w-sm'>
               {getLocalizedText(t.footer.description, language)}
@@ -129,7 +129,7 @@ export function Footer() {
         <div className='border-t border-white/10 mt-8 pt-5'>
           <div className='text-center space-y-1.5'>
             <p className='text-xs text-white/50 font-medium'>
-              © 2016 US BARTA. All rights reserved.
+              © 2026 US BARTA. All rights reserved.
             </p>
             <div className='space-y-0.5'>
               <p className='text-xs text-white/40'>

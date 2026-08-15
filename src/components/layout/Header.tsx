@@ -75,16 +75,16 @@ export function Header() {
       {/* Branding Row with News Ticker */}
       <div className='hidden md:block border-t border-gray-50'>
         <div className='mx-auto max-w-[1280px] px-6'>
-          <div className='flex items-center gap-6 py-2'>
-            {/* Large Logo — 170px wide, minimal vertical padding */}
-            <Link href='/' className='flex-shrink-0'>
+          <div className='flex items-center gap-6 py-1.5'>
+            {/* Logo — 160px wide, vertically centered */}
+            <Link href='/' className='flex-shrink-0 flex items-center'>
               <Image
                 src='/logo.png'
                 alt='US BARTA'
-                width={220}
-                height={70}
+                width={1365}
+                height={517}
                 priority
-                className='h-12 w-[170px] object-contain'
+                className='w-[160px] h-auto object-contain'
               />
             </Link>
 
