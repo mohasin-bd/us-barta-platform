@@ -196,3 +196,33 @@ Stage Summary:
 - No content duplication between sidebar (businesses) and bottom (editorial)
 - Category icon strip preserved on homepage, removed from article pages
 - All broken images now show branded US BARTA fallback instead of browser broken-image icons
+
+---
+Task ID: 2
+Agent: Main Agent
+Task: Redesign contextual business listing system — visual identity, trust signals, reusable architecture
+
+Work Log:
+- Expanded BusinessListing TypeScript type with: imageType (logo/headshot), logoUrl, profileImageUrl, verified, languages[], website, businessType, subcategories[], targetAudience[], serviceArea[], relevanceScore, sponsored listing type
+- Added BusinessImageType union type ('logo' | 'headshot') for visual identity decisions
+- Generated 4 professional AI images: Rahman & Associates law firm logo (navy/gold), attorney professional headshot (South Asian female), Bengali Legal Aid Center org logo (teal), Patel & Singh Law Group premium logo (burgundy/silver)
+- Updated mock business data: 3 organic listings (law-firm logo, individual-attorney headshot, nonprofit-organization logo) + 1 featured listing (premium law-firm logo)
+- Each business has distinct visual identity type, verified status, languages spoken, service areas, relevance scores, and target audiences
+- Redesigned BusinessListingCard: 56px logo/headshot with rounded-square (logo) vs rounded-full (headshot), verified badge (BadgeCheck), languages row (Globe icon), compact specialty tags (max 4), location/rating/distance row, contextual recommendation reason, primary CTA (প্রোফাইল দেখুন) + compact phone button
+- Updated ArticleSidebar: heading changed to 'প্রাসঙ্গিক সেবা' + 'আপনার এলাকার জন্য', Featured section now has explicit 'FEATURED' pill badge
+- Removed unused Info icon import from ArticleSidebar
+
+Browser Verification:
+- ✅ Desktop (1920x1080): All 4 business cards render with images, logos, headshots, languages, specialties, ratings, CTAs
+- ✅ Mobile (iPhone 14): Business cards display full-width below article content
+- ✅ Sidebar structure: প্রাসঙ্গিক সেবা (3 organic) → Featured Business (1 featured) → My US BARTA
+- ✅ ESLint: 0 errors
+- ✅ Browser console: 0 errors
+- ✅ All images load reliably (logos and headshot)
+
+Stage Summary:
+- Business listing system now supports both logo and headshot visual identities
+- Cards feel premium, trustworthy, contextual — not like generic ad banners
+- Architecture is category-agnostic: ready for health, education, real estate, etc.
+- Reusable BusinessListingCard with all fields for future business directory database
+- Type system supports organic/featured/sponsored listings with transparent labeling

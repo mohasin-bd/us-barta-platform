@@ -65,7 +65,16 @@ export interface Article {
 // Reusable for contextual sidebar monetization layer
 // ============================================================
 
-export type ListingType = 'organic' | 'featured';
+export type ListingType = 'organic' | 'featured' | 'sponsored';
+
+/**
+ * Visual identity type for a business listing.
+ * Determines how the thumbnail/logo area is rendered.
+ *
+ * 'logo'       → Business/company/organization logo (law firm, restaurant, legal aid, etc.)
+ * 'headshot'   → Professional headshot (individual attorney, doctor, agent, etc.)
+ */
+export type BusinessImageType = 'logo' | 'headshot';
 
 export type BusinessCategory =
   | 'immigration-attorney'
@@ -99,29 +108,65 @@ export interface BusinessListing {
   name: string;
   /** Professional tagline or short description */
   tagline?: string;
-  /** Specialties / service areas shown as chips */
+  /** Type of business entity for visual identity decisions */
+  businessType?: string;
+  /** Specialties / service areas shown as chips (2-4 recommended) */
   specialties: string[];
+
+  // --- Visual identity ---
+  /** Business logo URL (for law firms, companies, organizations) */
+  logoUrl?: string;
+  /** Professional headshot URL (for individual attorneys, doctors, agents) */
+  profileImageUrl?: string;
+  /** Which image to show: 'logo' or 'headshot' */
+  imageType: BusinessImageType;
+  /** Verified by US BARTA (optional badge) */
+  verified?: boolean;
+
+  // --- Location ---
   location: {
     city: string;
     state: string;
     neighborhood?: string;
   };
-  rating: number;
-  reviewCount?: number;
   /** Distance from user, e.g. "0.3 mi" — populated when user location is known */
   distance?: string;
+
+  // --- Trust signals ---
+  rating: number;
+  reviewCount?: number;
+
+  // --- Contact ---
   /** Phone for click-to-call */
   phone?: string;
-  /** Profile / listing URL */
+  /** Website URL */
+  website?: string;
+  /** Profile / listing URL on US BARTA */
   profileUrl?: string;
-  /** Organic (contextual match) or Featured (sponsored) */
+
+  // --- Languages ---
+  /** Languages spoken, e.g. ['বাংলা', 'English', 'Hindi'] */
+  languages?: string[];
+
+  // --- Listing classification ---
+  /** Organic, Featured, or Sponsored */
   listingType: ListingType;
   /** Which US BARTA content categories this listing is relevant for */
   relevantCategories: ContentCategory[];
   /** Business category for classification */
   businessCategory: BusinessCategory;
+  /** Subcategories for fine-grained matching */
+  subcategories?: string[];
+  /** Target audience segments */
+  targetAudience?: string[];
+  /** Service area (cities, states, or "nationwide") */
+  serviceArea?: string[];
+
+  // --- Recommendation intelligence ---
   /** Why this business is recommended — shown as contextual subtitle */
   recommendationReason?: string;
+  /** Algorithmic relevance score (0-1) — not displayed, used for sorting */
+  relevanceScore?: number;
 }
 
 export interface ArticlePageData {
