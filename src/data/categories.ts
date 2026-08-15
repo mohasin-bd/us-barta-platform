@@ -58,7 +58,7 @@ export const categories: CategoryConfig[] = [
   {
     slug: 'community',
     label: {
-      bn: 'সম্প্রদায়',
+      bn: 'কমিউনিটি',
       en: 'Community',
     },
     icon: 'Users',

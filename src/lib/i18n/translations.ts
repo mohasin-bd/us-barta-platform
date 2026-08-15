@@ -25,8 +25,8 @@ export const t = {
   // --- Hero ---
   hero: {
     headline: {
-      bn: 'আমেরিকাকে বুঝুন, জীবনকে সহজ করুন',
-      en: 'Understand America, Make Life Easier',
+      bn: 'বাংলাদেশি-আমেরিকানদের জন্য America-কে বোঝা ও জীবনকে সহজ করার AI-চালিত প্ল্যাটফর্ম।',
+      en: 'An AI-powered platform for Bangladeshi-Americans to understand America and make life easier.',
     },
     subtitle: {
       bn: 'বাংলাদেশি-আমেরিকানদের জন্য বিশ্বস্ত বাংলা প্ল্যাটফর্ম',
@@ -116,6 +116,7 @@ export const t = {
 
   // --- Weather ---
   weather: {
+    label: { bn: 'আবহাওয়া', en: 'Weather' },
     sunny: { bn: 'রৌদ্রোজ্জ্বল', en: 'Sunny' },
     cloudy: { bn: 'মেঘলা', en: 'Cloudy' },
     rainy: { bn: 'বৃষ্টি', en: 'Rainy' },

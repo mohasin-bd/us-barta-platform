@@ -1,13 +1,11 @@
 'use client';
 
-import { getLocalizedText } from '@/lib/i18n/bilingual';
 import { useLanguage } from '@/hooks/use-language';
 import { useTranslation } from '@/hooks/use-language';
 import { mockNotifications } from '@/data/sidebar';
 import { MyUSBartaItem } from './MyUSBartaItem';
 
 export function MyUSBartaWidget() {
-  const language = useLanguage();
   const translate = useTranslation('sidebar');
 
   return (
@@ -16,10 +14,7 @@ export function MyUSBartaWidget() {
         {translate('myUSBarta')}
       </h3>
       <p className="text-sm text-gray-500 mt-0.5">
-        {getLocalizedText({
-          bn: 'স্বাগতম, আসসালামু আলাইকুম',
-          en: 'Welcome, Assalamu Alaikum',
-        }, language)}
+        {translate('greeting')}
       </p>
 
       <div className="mt-3 space-y-0.5">

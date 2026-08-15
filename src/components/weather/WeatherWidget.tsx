@@ -18,7 +18,7 @@ const dayAbbrMap: Record<string, { bn: string; en: string }> = {
   Monday: { bn: 'সোম', en: 'Mon' },
   Tuesday: { bn: 'মঙ্গল', en: 'Tue' },
   Wednesday: { bn: 'বুধ', en: 'Wed' },
-  Thursday: { bn: 'বৃহৃ', en: 'Thu' },
+  Thursday: { bn: 'বৃহঃ', en: 'Thu' },
   Friday: { bn: 'শুক্র', en: 'Fri' },
   Saturday: { bn: 'শনি', en: 'Sat' },
   Sunday: { bn: 'রবি', en: 'Sun' },
@@ -30,7 +30,7 @@ export function WeatherWidget() {
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-4">
-      <h3 className="text-base font-bold text-[#0f2557]">{translate('weather')}</h3>
+      <h3 className="text-base font-bold text-[#0f2557]">{translate('label')}</h3>
 
       <div className="flex items-center gap-1.5 text-sm text-gray-500 mt-2">
         <MapPin className="h-3.5 w-3.5" />

@@ -21,7 +21,7 @@ export function ExploreMenu() {
   const language = useLanguage();
 
   const utilityItems = [
-    { icon: 'MapPin', label: { bn: 'Business Directory', en: 'Business Directory' }, href: '/directory' },
+    { icon: 'MapPin', label: { bn: 'ব্যবসা ডিরেক্টরি', en: 'Business Directory' }, href: '/directory' },
     { icon: 'CalendarDays', label: { bn: 'ইভেন্টস', en: 'Events' }, href: '/events' },
     { icon: 'Search', label: { bn: 'সার্চ', en: 'Search' }, href: '/search' },
     { icon: 'Bell', label: { bn: 'সতর্কতা', en: 'Alerts' }, href: '/alerts' },

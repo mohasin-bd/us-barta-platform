@@ -59,7 +59,7 @@ export const mockCommunity: ContentItem[] = [
       en: 'Volunteer Opportunity: Help at Jackson Heights Food Pantry',
     },
     summary: {
-      bn: 'জ্যাকসন হাইটস কমিউনিটি ফুড প্যান্ট্রি স্বেচ্ছাসেবীদের খুঁজছে। প্রতি সপ্তাহের শনিবার সকালে খাদ্য বিতরণে সাহায্য করতে পারবেন। বাংলা ভাষায় কথা বলতে পারলে অতিরিক্ত সুবিধা। সম্প্রদায়ের প্রয়োজনে এগিয়ে আসুন।',
+      bn: 'জ্যাকসন হাইটস কমিউনিটি ফুড প্যান্ট্রি স্বেচ্ছাসেবীদের খুঁজছে। প্রতি সপ্তাহের শনিবার সকালে খাদ্য বিতরণে সাহায্য করতে পারবেন। বাংলা ভাষায় কথা বলতে পারলে অতিরিক্ত সুবিধা। কমিউনিটির প্রয়োজনে এগিয়ে আসুন।',
       en: 'The Jackson Heights Community Food Pantry is looking for volunteers. You can help with food distribution every Saturday morning. Bengali language skills are a plus. Step forward for the needs of the community.',
     },
     image: undefined,

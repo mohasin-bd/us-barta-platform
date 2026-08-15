@@ -87,3 +87,33 @@ Stage Summary:
 - Entertainment with Bangladesh/India/Hollywood regions
 - Sidebar: My US BARTA, Weather, Social, Newsletter, Promo
 - AI-ready data architecture with BilingualText throughout
+---
+Task ID: visual-correction-pass
+Agent: Main Agent
+Task: Visual correction pass - restore original US BARTA visual direction
+
+Work Log:
+- Audited all source files to identify visual/text issues
+- Generated new Statue of Liberty hero image (replaced generic NYC skyline)
+- Rewrote HeroSection: darker navy overlay, exact positioning statement, icon-based entry point cards with shadow/depth
+- Redesigned CategoryQuickLinks: colored icon containers with borders, rounded-2xl, hover scale + shadow, per-category brand colors
+- Fixed Community terminology: সম্প্রদায় → কমিউনিটি in categories.ts and community.ts (2 files)
+- Fixed Bengali typo: বৃহৃ → বৃহঃ in WeatherWidget.tsx
+- Fixed ExploreMenu: Business Directory had English text for bn label
+- Fixed WeatherWidget heading: added label key to weather translations, was showing raw key 'weather'
+- Replaced MyUSBartaWidget hardcoded duplicate greeting with translation system call
+- Replaced Footer social icon placeholder letters with proper SVG icons (Facebook, YouTube, Instagram, TikTok, Telegram)
+- Replaced SocialConnectWidget placeholder letters with matching SVG icons
+- Updated hero translations.ts headline to exact user-specified text
+- Verified via Agent Browser: desktop, mobile 375px, footer, sidebar
+- ESLint: 0 errors
+- Browser console: 0 errors
+
+Stage Summary:
+- Hero now shows Statue of Liberty with exact positioning statement as h1
+- Hero has two prominent entry points: আজকের গুরুত্বপূর্ণ খবর and My US BARTA
+- Quick Access redesigned with colored icon containers, borders, hover effects, brand-aligned colors
+- All Community references use কমিউনিটি (zero সম্প্রদায় in codebase)
+- Bengali text renders correctly across all components
+- All social media icons are proper SVGs, not placeholder letters
+- Architecture preserved: types, i18n, stores, responsive layout, repository pattern all intact
